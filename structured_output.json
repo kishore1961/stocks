@@ -1,0 +1,36 @@
+[
+  {
+    "page_number": 1,
+    "text_key_values": {
+      "NameofDirector": "PuneetSinghJaggi",
+      "DateofBirth": "30/05/1987",
+      "Age": "37Years",
+      "DateofAppointment": "February27,2024",
+      "ExpertiseinspecificFunctionalAreas": "Mr. Puneet Singh Jaggi has an experience of 14 year in",
+      "Qualifications": "BachelorofTechnology(ChemicalEngineering)",
+      "DirectorsinotherPublicCompanies": "NIL",
+      "OtherPositionsasdirector": "NIL",
+      "MembershipofCommitteesinotherunlistedPublic": "NIL Companies",
+      "InterRelationship": "HeisBrotherofMr.AnmolSinghJaggi SharesheldintheCompanyasat31stMarch,2024 69,90,258 301",
+      "has": "been instrumental in taking major policy decision",
+      "of": "the Company. He is playing vital role in formulating",
+      "business": "strategies and effective implementation of the",
+      "same.": "He is responsible for the expansion and overall managementofthebusinessofourCompany.",
+      "energy": "industry. He looks after designing of Technical",
+      "Architecture": "and manage entire Product development",
+      "cycle": "of the company. He has completed Bachelor of",
+      "Technology": "(Chemical Engineering) from Indian Institute ofTechnologyRoorkee."
+    },
+    "table_key_values": [
+      {
+        "NameofDirector": "AliImranNaqvi"
+      },
+      {
+        "NameofDirector": "AnmolSinghJaggi"
+      },
+      {
+        "NameofDirector": "PuneetSinghJaggi"
+      }
+    ]
+  }
+]
