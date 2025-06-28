@@ -1,0 +1,37 @@
+{
+  "RELIANCE": {
+    "symbol": "RELIANCE",
+    "exchange": "NSE",
+    "url": "https://www.google.com/finance/quote/RELIANCE:NSE",
+    "current_price": "\u20b91,514.00Jun 27, 3:59:58\u202fPM GMT+5:30 \u00b7 INR \u00b7 NSE \u00b7 Disclaimer",
+    "company_name": "Reliance Industries Ltd"
+  },
+  "TCS": {
+    "symbol": "TCS",
+    "exchange": "NSE",
+    "url": "https://www.google.com/finance/quote/TCS:NSE",
+    "current_price": "\u20b93,445.00Jun 27, 3:59:55\u202fPM GMT+5:30 \u00b7 INR \u00b7 NSE \u00b7 Disclaimer",
+    "company_name": "Tata Consultancy Services Ltd"
+  },
+  "HDFCBANK": {
+    "symbol": "HDFCBANK",
+    "exchange": "NSE",
+    "url": "https://www.google.com/finance/quote/HDFCBANK:NSE",
+    "current_price": "\u20b92,011.50Jun 27, 3:59:55\u202fPM GMT+5:30 \u00b7 INR \u00b7 NSE \u00b7 Disclaimer",
+    "company_name": "HDFC Bank Ltd"
+  },
+  "INFY": {
+    "symbol": "INFY",
+    "exchange": "NSE",
+    "url": "https://www.google.com/finance/quote/INFY:NSE",
+    "current_price": "\u20b91,611.00Jun 27, 3:59:55\u202fPM GMT+5:30 \u00b7 INR \u00b7 NSE \u00b7 Disclaimer",
+    "company_name": "Infosys Ltd"
+  },
+  "SBIN": {
+    "symbol": "SBIN",
+    "exchange": "NSE",
+    "url": "https://www.google.com/finance/quote/SBIN:NSE",
+    "current_price": "\u20b9804.55Jun 27, 3:59:49\u202fPM GMT+5:30 \u00b7 INR \u00b7 NSE \u00b7 Disclaimer",
+    "company_name": "State Bank of India"
+  }
+}
