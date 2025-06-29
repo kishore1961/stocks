@@ -1,0 +1,178 @@
+{
+  "scrip_code": "500325",
+  "fetch_time": "2025-06-29 14:10:29",
+  "basic_quote": {
+    "companyName": "Reliance Industries Ltd",
+    "currentValue": "1516.05",
+    "change": "20.85",
+    "pChange": "1.39",
+    "updatedOn": "27 Jun 25 | 04:00 PM",
+    "priceBand": "10%",
+    "securityID": "RELIANCE",
+    "scripCode": "500325",
+    "group": "A  / BSE SENSEX",
+    "faceValue": "10.00",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "previousClose": "1495.20",
+    "previousOpen": "1498.05",
+    "dayHigh": "1521.70",
+    "dayLow": "1497.10",
+    "52weekHigh": "1608.95",
+    "52weekLow": "1115.55",
+    "weightedAvgPrice": "1510.73",
+    "totalTradedValue": "51.47 Cr.",
+    "totalTradedQuantity": "3.41 Lakh",
+    "2WeekAvgQuantity": "9.70 Lakh",
+    "marketCapFull": "20,51,590.51 Cr.",
+    "marketCapFreeFloat": "10,24,293.49 Cr.",
+    "upperPriceBand": "1667.65",
+    "lowerPriceBand": "1364.45",
+    "buy": {
+      "1": {
+        "quantity": "-",
+        "price": "0.00"
+      },
+      "2": {
+        "quantity": "-",
+        "price": "0.00"
+      },
+      "3": {
+        "quantity": "-",
+        "price": "0.00"
+      },
+      "4": {
+        "quantity": "-",
+        "price": "0.00"
+      },
+      "5": {
+        "quantity": "-",
+        "price": "0.00"
+      }
+    },
+    "sell": {
+      "1": {
+        "price": "0.00",
+        "quantity": "-"
+      },
+      "2": {
+        "price": "0.00",
+        "quantity": "-"
+      },
+      "3": {
+        "price": "0.00",
+        "quantity": "-"
+      },
+      "4": {
+        "price": "0.00",
+        "quantity": "-"
+      },
+      "5": {
+        "price": "0.00",
+        "quantity": "-"
+      }
+    }
+  },
+  "detailed_quote": {
+    "SecurityId": "RELIANCE",
+    "Grp_Index": "A / BSE SENSEX",
+    "FaceVal": "10.00",
+    "SecurityCode": "500325",
+    "ISIN": "INE002A01018",
+    "Industry": "Refineries & Marketing",
+    "Group": "A",
+    "Index": "BSE SENSEX",
+    "PAIDUP_VALUE": "",
+    "EPS": "26.06",
+    "CEPS": "39.34",
+    "PE": "58.18",
+    "OPM": "15.20",
+    "NPM": "8.24",
+    "PB": "3.91",
+    "ROE": "6.73",
+    "Sector": "Energy",
+    "IndustryNew": "Oil, Gas & Consumable Fuels",
+    "IGroup": "Petroleum Products",
+    "ISubGroup": "Refineries & Marketing",
+    "IShow": "1",
+    "SetlType": "T+1"
+  },
+  "financials": {
+    "Table": [
+      {
+        "year": "2024",
+        "file_name": "d473280d-1c2b-4037-8ff9-dfbb82aa2c7e.pdf.pdf",
+        "dt_tm": "2024-08-07T14:31:33.443"
+      },
+      {
+        "year": "2023",
+        "file_name": "\\b55b5dfc-a3bf-4f24-9d7f-ca09774a1dd9.pdf.pdf",
+        "dt_tm": "2023-08-06T14:39:03.823"
+      },
+      {
+        "year": "2022",
+        "file_name": "74185500325.pdf",
+        "dt_tm": "2022-08-10T14:32:02"
+      },
+      {
+        "year": "2021",
+        "file_name": "68509500325.pdf",
+        "dt_tm": "2021-06-03T13:04:14"
+      },
+      {
+        "year": "2020",
+        "file_name": "5003250320.pdf",
+        "dt_tm": "2020-06-24T15:02:55"
+      },
+      {
+        "year": "2019",
+        "file_name": "5003250319.pdf",
+        "dt_tm": "2019-07-22T11:52:45"
+      },
+      {
+        "year": "2018",
+        "file_name": "5003250318.pdf",
+        "dt_tm": "2018-07-06T11:29:42"
+      },
+      {
+        "year": "2017",
+        "file_name": "5003250317.pdf",
+        "dt_tm": "2017-08-02T12:29:07"
+      },
+      {
+        "year": "2016",
+        "file_name": "5003250316.pdf",
+        "dt_tm": "2016-09-03T12:18:24"
+      },
+      {
+        "year": "2015",
+        "file_name": "5003250315.pdf",
+        "dt_tm": "2015-05-23T16:18:33"
+      },
+      {
+        "year": "2014",
+        "file_name": "5003250314.pdf",
+        "dt_tm": "2014-05-21T18:20:51"
+      },
+      {
+        "year": "2013",
+        "file_name": "5003250313.pdf",
+        "dt_tm": "2013-09-16T15:41:42"
+      },
+      {
+        "year": "2012",
+        "file_name": "5003250312.pdf",
+        "dt_tm": "2012-05-22T10:16:08"
+      },
+      {
+        "year": "2011",
+        "file_name": "5003250311.pdf",
+        "dt_tm": "2012-03-26T00:00:00"
+      },
+      {
+        "year": "2010",
+        "file_name": "5003250310.pdf",
+        "dt_tm": "2012-03-26T00:00:00"
+      }
+    ]
+  }
+}

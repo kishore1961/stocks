@@ -6,8 +6,10 @@ from datetime import datetime, timedelta
 import time
 
 class BSECompanyDataExtractor:
-    def __init__(self):
+    def __init__(self,scrip_code=None):
         """Initialize BSE data extractor"""
+        self.scrip_code = scrip_code
+
         try:
             self.bse = BSE()
             self.bse_available = True
@@ -23,48 +25,23 @@ class BSECompanyDataExtractor:
             'Connection': 'keep-alive'
         }
     
-    def get_basic_quote(self, scrip_code):
+    def get_basic_quote(self):
         """Get basic quote data using bsedata library"""
         if not self.bse_available:
             return None
         
         try:
-            quote = self.bse.getQuote(scrip_code)
+            quote = self.bse.getQuote(self.scrip_code)
             return quote
         except Exception as e:
             print(f"Error getting quote via bsedata: {e}")
             return None
-    
-    def get_company_data_api(self, scrip_code):
-        """Get company data using direct BSE API calls"""
-        try:
-            # BSE Quote API
-            quote_url = f"https://api.bseindia.com/BseIndiaAPI/api/StockReachGraph/w"
-            
-            params = {
-                'scripcode': scrip_code,
-                'flag': 'sp',
-                'fromdate': (datetime.now() - timedelta(days=30)).strftime('%Y%m%d'),
-                'todate': datetime.now().strftime('%Y%m%d'),
-                'seriesid': ''
-            }
-            
-            response = requests.get(quote_url, params=params, headers=self.headers, timeout=10)
-            
-            if response.status_code == 200:
-                return response.json()
-            else:
-                return None
-                
-        except Exception as e:
-            print(f"Error fetching from BSE API: {e}")
-            return None
-    
-    def get_detailed_quote(self, scrip_code):
+
+    def get_detailed_quote(self):
         """Get detailed quote information"""
         try:
             url = f"https://api.bseindia.com/BseIndiaAPI/api/ComHeader/w"
-            params = {'quotetype': 'EQ', 'scripcode': scrip_code}
+            params = {'quotetype': 'EQ', 'scripcode': self.scrip_code}
             
             response = requests.get(url, params=params, headers=self.headers, timeout=10)
             
@@ -77,11 +54,11 @@ class BSECompanyDataExtractor:
             print(f"Error getting detailed quote: {e}")
             return None
     
-    def get_company_financials(self, scrip_code):
+    def get_company_financials(self ):
         """Get company financial data"""
         try:
             url = "https://api.bseindia.com/BseIndiaAPI/api/AnnualReport/w"
-            params = {'scripcode': scrip_code}
+            params = {'scripcode': self.scrip_code}
             
             response = requests.get(url, params=params, headers=self.headers, timeout=10)
             
@@ -94,14 +71,13 @@ class BSECompanyDataExtractor:
             print(f"Error getting financials: {e}")
             return None
 
-    
-    def get_all_company_data(self, scrip_code):
+    def get_all_company_data(self):
         """Get comprehensive company data"""
-        print(f"Fetching comprehensive data for scrip code: {scrip_code}")
+        print(f"Fetching comprehensive data for scrip code: {self.scrip_code}")
         print("=" * 60)
         
         company_data = {
-            'scrip_code': scrip_code,
+            'scrip_code': self.scrip_code,
             'fetch_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             'basic_quote': None,
             'detailed_quote': None,
@@ -110,7 +86,7 @@ class BSECompanyDataExtractor:
         
         # 1. Basic Quote (using bsedata if available)
         print("1. Fetching basic quote...")
-        company_data['basic_quote'] = self.get_basic_quote(scrip_code)
+        company_data['basic_quote'] = self.get_basic_quote()
         if company_data['basic_quote']:
             print("   ✓ Basic quote retrieved")
         else:
@@ -121,7 +97,7 @@ class BSECompanyDataExtractor:
         
         # 2. Detailed Quote
         print("2. Fetching detailed quote...")
-        company_data['detailed_quote'] = self.get_detailed_quote(scrip_code)
+        company_data['detailed_quote'] = self.get_detailed_quote()
         if company_data['detailed_quote']:
             print("   ✓ Detailed quote retrieved")
         else:
@@ -132,7 +108,7 @@ class BSECompanyDataExtractor:
         
         # 3. Company Financials
         print("3. Fetching financial data...")
-        company_data['financials'] = self.get_company_financials(scrip_code)
+        company_data['financials'] = self.get_company_financials()
         if company_data['financials']:
             print("   ✓ Financial data retrieved")
         else:
@@ -145,10 +121,11 @@ class BSECompanyDataExtractor:
     def save_to_files(self, company_data, prefix=None):
         """Save company data to various files"""
         scrip_code = company_data['scrip_code']
+        company_name = company_data['company_name'] if 'company_name' in company_data else 'company_data'
         if prefix:
-            filename_base = f"{prefix}_{scrip_code}"
+            filename_base = f"data/{prefix}_{self.scrip_code}"
         else:
-            filename_base = f"company_data_{scrip_code}"
+            filename_base = f"data/{company_name}_url_{self.scrip_code}"
         
         # Save complete data as JSON
         json_filename = f"{filename_base}_complete.json"
@@ -159,50 +136,6 @@ class BSECompanyDataExtractor:
         except Exception as e:
             print(f"✗ Error saving JSON: {e}")
 
-        
-        # Save summary as text
-        try:
-            summary_filename = f"{filename_base}_summary.txt"
-            with open(summary_filename, 'w') as f:
-                f.write(f"Company Data Summary - {scrip_code}\n")
-                f.write(f"Generated on: {company_data['fetch_time']}\n")
-                f.write("=" * 50 + "\n\n")
-                
-                # Basic quote summary
-                basic_quote = company_data.get('basic_quote')
-                if basic_quote:
-                    f.write("BASIC QUOTE INFORMATION:\n")
-                    for key, value in basic_quote.items():
-                        f.write(f"  {key}: {value}\n")
-                    f.write("\n")
-            
-            print(f"✓ Summary saved to: {summary_filename}")
-        except Exception as e:
-            print(f"✗ Error saving summary: {e}")
-
-def main():
-    """Main function to demonstrate usage"""
-    extractor = BSECompanyDataExtractor()
-    
-    # Example usage
-    print("BSE Company Data Extractor")
-    print("=" * 40)
-    
-    # Get scrip code from user
-    scrip_code = input("Enter BSE scrip code (e.g., 500325 for Reliance): ").strip()
-    
-    if not scrip_code:
-        print("Using default scrip code: 500325 (Reliance)")
-        scrip_code = "500325"
-    
-    company_data = extractor.get_all_company_data(scrip_code)
-    
-    # Save to files
-    print(f"\n💾 SAVING DATA TO FILES:")
-    extractor.save_to_files(company_data)
-    
-    print(f"\n✅ Data extraction completed for scrip code: {scrip_code}")
-    return company_data
 
 # Example usage for multiple companies
 def batch_extract_companies(scrip_codes):
@@ -220,6 +153,44 @@ def batch_extract_companies(scrip_codes):
     
     return all_companies_data
 
-if __name__ == "__main__":
-    # Single company extraction
-    company_data = main()
+
+# This code uses the BSE URL directly, which is not recommended due to potential issues with scraping and rate limiting.
+# However, it is included here for demonstration purposes.
+bse_url = False
+
+# fetch data using bse url which is not good to do
+
+if bse_url:
+
+    # Example usage
+    print("BSE Company Data Extractor")
+    print("=" * 40)
+
+    # Get scrip code from user
+    scrip_code = input("Enter BSE scrip code (e.g., 500325 for Reliance): ").strip()
+
+    if not scrip_code:
+        print("Using default scrip code: 500325 (Reliance)")
+        scrip_code = "500325"
+    
+    start = time.time()
+    print("Fetching data using BSE URL...")
+
+    """Main function to demonstrate usage"""
+    extractor = BSECompanyDataExtractor(scrip_code)
+
+    company_data = extractor.get_all_company_data()
+
+    # Save to files
+    print(f"\n💾 SAVING DATA TO FILES:")
+    extractor.save_to_files(company_data)
+
+    print(f"\n✅ Data extraction completed for scrip code: {scrip_code}")
+    end = time.time()
+    print(f"Total time taken: {end - start:.2f} seconds")
+
+
+else:
+    print("Nothing to do, bse_url is set to False. This is not recommended for production use.")
+
+

@@ -77,7 +77,7 @@ class BSECompaniesExtractor:
             print(f"Error occurred: {str(e)}")
             return None
         
-    def save_to_file(self,df, filename='bse_companies.csv'):
+    def save_to_file(self,df, filename='data/bse_companies.csv'):
         """
         Save company data to CSV file
         """

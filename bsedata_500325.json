@@ -1,0 +1,148 @@
+{
+  "scrip_code": "500325",
+  "fetch_time": "2025-06-29 13:55:09",
+  "quote_data": {
+    "companyName": "Reliance Industries Ltd",
+    "currentValue": "1516.05",
+    "change": "20.85",
+    "pChange": "1.39",
+    "updatedOn": "27 Jun 25 | 04:00 PM",
+    "securityID": "RELIANCE",
+    "scripCode": "500325",
+    "group": "A  / BSE SENSEX",
+    "faceValue": "10.00",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "previousClose": "1495.20",
+    "previousOpen": "1498.05",
+    "dayHigh": "1521.70",
+    "dayLow": "1497.10",
+    "52weekHigh": "1608.95",
+    "52weekLow": "1115.55",
+    "weightedAvgPrice": "1510.73",
+    "totalTradedValue": "51.47 Cr.",
+    "totalTradedQuantity": "3.41 Lakh",
+    "2WeekAvgQuantity": "9.70 Lakh",
+    "marketCapFull": "20,51,590.51 Cr.",
+    "marketCapFreeFloat": "10,24,293.49 Cr.",
+    "buy": {
+      "1": {
+        "quantity": "-",
+        "price": "0.00"
+      },
+      "2": {
+        "quantity": "-",
+        "price": "0.00"
+      },
+      "3": {
+        "quantity": "-",
+        "price": "0.00"
+      },
+      "4": {
+        "quantity": "-",
+        "price": "0.00"
+      },
+      "5": {
+        "quantity": "-",
+        "price": "0.00"
+      }
+    },
+    "sell": {
+      "1": {
+        "price": "0.00",
+        "quantity": "-"
+      },
+      "2": {
+        "price": "0.00",
+        "quantity": "-"
+      },
+      "3": {
+        "price": "0.00",
+        "quantity": "-"
+      },
+      "4": {
+        "price": "0.00",
+        "quantity": "-"
+      },
+      "5": {
+        "price": "0.00",
+        "quantity": "-"
+      }
+    }
+  },
+  "market_data": {
+    "top_gainers": [
+      {
+        "securityID": "HSCL",
+        "scripCode": "500184",
+        "LTP": "504.95",
+        "change": "57.10",
+        "pChange": "12.75"
+      },
+      {
+        "securityID": "LLOYDSENPP",
+        "scripCode": "890216",
+        "LTP": "49.02",
+        "change": "4.50",
+        "pChange": "10.11"
+      },
+      {
+        "securityID": "LTFOODS",
+        "scripCode": "532783",
+        "LTP": "484.60",
+        "change": "43.75",
+        "pChange": "9.92"
+      },
+      {
+        "securityID": "NH",
+        "scripCode": "539551",
+        "LTP": "2,270.15",
+        "change": "199.35",
+        "pChange": "9.63"
+      },
+      {
+        "securityID": "KIRLOSBROS",
+        "scripCode": "500241",
+        "LTP": "2,329.50",
+        "change": "193.60",
+        "pChange": "9.06"
+      }
+    ],
+    "top_losers": [
+      {
+        "securityID": "TDPOWERSYS",
+        "scripCode": "533553",
+        "LTP": "506.00",
+        "change": "-34.75",
+        "pChange": "-6.43"
+      },
+      {
+        "securityID": "COHANCE",
+        "scripCode": "543064",
+        "LTP": "944.05",
+        "change": "-58.05",
+        "pChange": "-5.79"
+      },
+      {
+        "securityID": "AEGISLOG",
+        "scripCode": "500003",
+        "LTP": "782.55",
+        "change": "-43.20",
+        "pChange": "-5.23"
+      },
+      {
+        "securityID": "INFIBEAM",
+        "scripCode": "539807",
+        "LTP": "16.81",
+        "change": "-0.68",
+        "pChange": "-3.89"
+      },
+      {
+        "securityID": "PHOENIXLTD",
+        "scripCode": "503100",
+        "LTP": "1,571.05",
+        "change": "-55.10",
+        "pChange": "-3.39"
+      }
+    ]
+  }
+}
