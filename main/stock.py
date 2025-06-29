@@ -188,7 +188,7 @@ print(f"\n✅ Data extraction completed!")
 # Example: Get data for multiple companies
 def example_batch_processing():
     """Example of batch processing multiple companies"""
-    extractor = BSEDataExtractor()
+    extractor = Stock()
     
     # Popular stock scrip codes
     scrip_codes = [

@@ -8,4 +8,4 @@
     for a given stock it give the basic quote data using bse
 
 
-I have to dhift it to database
+I have to shift it to database
