@@ -77,8 +77,6 @@ class BSECompanyDataExtractor:
             print(f"Error getting detailed quote: {e}")
             return None
     
-
-    
     def get_company_financials(self, scrip_code):
         """Get company financial data"""
         try:
@@ -95,23 +93,7 @@ class BSECompanyDataExtractor:
         except Exception as e:
             print(f"Error getting financials: {e}")
             return None
-    
-    def get_company_profile(self, scrip_code):
-        """Get company profile and details"""
-        try:
-            url = "https://api.bseindia.com/BseIndiaAPI/api/CompanyMasterData/w"
-            params = {'scripcode': scrip_code}
-            
-            response = requests.get(url, params=params, headers=self.headers, timeout=10)
-            
-            if response.status_code == 200:
-                return response.json()
-            else:
-                return None
-                
-        except Exception as e:
-            print(f"Error getting company profile: {e}")
-            return None
+
     
     def get_all_company_data(self, scrip_code):
         """Get comprehensive company data"""
@@ -148,8 +130,8 @@ class BSECompanyDataExtractor:
         time.sleep(0.5)
         
         
-        # 4. Company Financials
-        print("4. Fetching financial data...")
+        # 3. Company Financials
+        print("3. Fetching financial data...")
         company_data['financials'] = self.get_company_financials(scrip_code)
         if company_data['financials']:
             print("   ✓ Financial data retrieved")
@@ -157,14 +139,6 @@ class BSECompanyDataExtractor:
             print("   ✗ Financial data failed")
         
         time.sleep(0.5)
-        
-        # 5. Company Profile
-        print("5. Fetching company profile...")
-        company_data['company_profile'] = self.get_company_profile(scrip_code)
-        if company_data['company_profile']:
-            print("   ✓ Company profile retrieved")
-        else:
-            print("   ✗ Company profile failed")
         
         return company_data
     
@@ -221,7 +195,6 @@ def main():
         print("Using default scrip code: 500325 (Reliance)")
         scrip_code = "500325"
     
-    # Fetch all company data
     company_data = extractor.get_all_company_data(scrip_code)
     
     # Save to files
