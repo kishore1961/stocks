@@ -156,7 +156,7 @@ def batch_extract_companies(scrip_codes):
 
 # This code uses the BSE URL directly, which is not recommended due to potential issues with scraping and rate limiting.
 # However, it is included here for demonstration purposes.
-bse_url = False
+bse_url = True
 
 # fetch data using bse url which is not good to do
 

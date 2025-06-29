@@ -187,37 +187,7 @@ class BSECompaniesExtractor:
         print(f"Created manual list with {len(df)} popular companies")
         return df
     
-    def create_stk_json_file(self):
-        """
-        Create the missing stk.json file manually
-        """
-        try:
-            print("Creating stk.json file...")
-            
-            # Sample stock data structure
-            sample_data = {
-                "500325": "RELIANCE INDUSTRIES LTD",
-                "500209": "INFOSYS LTD",
-                "532540": "TATA CONSULTANCY SERVICES LTD",
-                "500010": "HDFC BANK LTD",
-                "532215": "AXIS BANK LTD"
-            }
-            
-            # Find the bsedata package directory
-            import bsedata
-            bse_path = os.path.dirname(bsedata.__file__)
-            stk_json_path = os.path.join(bse_path, 'stk.json')
-            
-            with open(stk_json_path, 'w') as f:
-                json.dump(sample_data, f, indent=2)
-            
-            print(f"Created stk.json file at: {stk_json_path}")
-            return True
-            
-        except Exception as e:
-            print(f"Failed to create stk.json: {str(e)}")
-            return False
-        
+
 
 bse_extractor = BSECompaniesExtractor()
 

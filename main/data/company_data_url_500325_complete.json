@@ -1,13 +1,12 @@
 {
   "scrip_code": "500325",
-  "fetch_time": "2025-06-29 14:10:29",
+  "fetch_time": "2025-06-29 14:25:13",
   "basic_quote": {
     "companyName": "Reliance Industries Ltd",
     "currentValue": "1516.05",
     "change": "20.85",
     "pChange": "1.39",
     "updatedOn": "27 Jun 25 | 04:00 PM",
-    "priceBand": "10%",
     "securityID": "RELIANCE",
     "scripCode": "500325",
     "group": "A  / BSE SENSEX",
@@ -25,8 +24,6 @@
     "2WeekAvgQuantity": "9.70 Lakh",
     "marketCapFull": "20,51,590.51 Cr.",
     "marketCapFreeFloat": "10,24,293.49 Cr.",
-    "upperPriceBand": "1667.65",
-    "lowerPriceBand": "1364.45",
     "buy": {
       "1": {
         "quantity": "-",
