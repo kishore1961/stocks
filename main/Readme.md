@@ -6,3 +6,6 @@
 
 - stock.py - working on it
     for a given stock it give the basic quote data using bse
+
+
+I have to dhift it to database
