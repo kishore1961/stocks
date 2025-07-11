@@ -1,0 +1,3428 @@
+<div class="main">
+ <div class="main get_quote_page get_quote_feature_request get_quote_ui_enhanced">
+  <section class="breadcrumb_head trade_info_head">
+   <div class="container">
+    <ul typeof="BreadcrumbList" vocab="https://schema.org/">
+     <li property="itemListElement" typeof="ListItem">
+      <a href="/" property="name" typeof="WebPage">
+       Home
+      </a>
+      <meta content="1" property="position"/>
+     </li>
+     <li property="name" typeof="ListItem">
+      Get Quote
+      <meta content="2" property="position"/>
+     </li>
+    </ul>
+    <h1 class="page-title text-uppercase">
+     Quote - Equity
+    </h1>
+   </div>
+  </section>
+  <div class="mid_body getquote_contianer getquote-rm">
+   <section class="common-tabs">
+    <div class="container-fluid">
+     <div class="row">
+      <div class="col-xs-12 w-100">
+       <nav class="border-0 getquote_parent_tabs">
+        <div class="container">
+         <div class="nav nav-tabs" id="quoteNav">
+          <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#tradeinfo-sbin" role="tab">
+          </a>
+         </div>
+        </div>
+       </nav>
+       <div class="tab-content">
+        <div class="tab-pane fade show active" id="tradeinfo-sbin" role="tabpanel">
+         <div class="container">
+          <div class="tab_header">
+           <div class="row">
+            <div class="col-md-6">
+             <h1 id="quoteName">
+              BEML Limited
+             </h1>
+            </div>
+            <div class="col-md-6">
+             <div class="right_section">
+              <ul>
+               <li>
+               </li>
+               <li class="top10Today">
+                <span hidden="" id="top10Today">
+                 <i class="fa fa-caret-up cursor_pointer">
+                 </i>
+                 <span id="in_top10_today">
+                  In Top 10 today
+                 </span>
+                </span>
+               </li>
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <nav class="subtabs subtabs-spacing">
+          <div class="container">
+           <div class="row align-items-center">
+            <div class="col-md-8">
+             <div class="nav nav-tabs">
+              <ul class="nav" role="tablist">
+               <li tabindex="0">
+                <a aria-selected="true" class="nav-item nav-link show active" href="#" id="subtab-equity-alink" role="tab">
+                 Equity
+                </a>
+               </li>
+               <li tabindex="0">
+                <a aria-selected="false" class="nav-item nav-link" href="#" id="subtab-derivatives-alink" role="tab" style="display:none">
+                 <span id="Derivatives">
+                  Derivatives
+                 </span>
+                </a>
+               </li>
+               <li tabindex="0">
+                <a aria-selected="false" class="nav-item nav-link" href="#" id="subtab-slb-alink" role="tab" style="display:none">
+                 <span id="sec_landBoerr_slb">
+                  SLB
+                 </span>
+                </a>
+               </li>
+               <li tabindex="0">
+                <a aria-selected="false" class="nav-item nav-link" href="#" id="subtab-bonds-alink" role="tab" style="display:none">
+                 Bonds
+                </a>
+               </li>
+              </ul>
+             </div>
+            </div>
+            <div class="col-md-4 text-end">
+             <span class="asondate">
+              <span id="asontxt">
+               As on
+              </span>
+              <span dir="ltr" id="asondate">
+              </span>
+              <span id="allpriceinc">
+               IST (All price values in
+               <i class="fa fa-rupee">
+               </i>
+               )
+              </span>
+             </span>
+             <span>
+              <a href="#" id="refreshPage">
+               <img alt="Refresh" class="refreshIcon" src="/assets/images/refresh-icon.svg" title="Refresh"/>
+              </a>
+             </span>
+            </div>
+           </div>
+          </div>
+         </nav>
+         <div class="tab-content py-0">
+          <div class="tab-pane fade show active" id="subtab-equity" role="tabpanel">
+           <section class="price-info-container mt-0 price-space" id="priceinfo-scroll">
+            <div class="container-fluid px-0">
+             <div class="row price-infobox price-infobox-spacing" style="flex-direction:column">
+              <div class="container">
+               <aside class="priceinfo-blkbox priceinfo-blkbox-width">
+                <div class="blkbox-whitetxt">
+                 <span data-nse-translate="number" id="quoteLtp">
+                 </span>
+                 <span class="blkbox-greentxt" id="arrowInfoStatus">
+                  <span class="rg-arrow">
+                   <span class="invisibleText">
+                    High
+                   </span>
+                  </span>
+                 </span>
+                </div>
+                <div class="blkbox-greentxt">
+                 <div>
+                  <span data-nse-translate="number" id="priceInfoStatus">
+                  </span>
+                 </div>
+                 <div>
+                  <span data-nse-translate="number" id="priceChangeStatus">
+                  </span>
+                 </div>
+                </div>
+               </aside>
+               <aside class="priceinfo-rightbox">
+                <div class="priceinfo-tabletop priceinfo-tabletop-spacing">
+                 <div class="table-wrap">
+                  <table class="w-100" id="priceInfoTable">
+                   <thead>
+                    <tr>
+                     <th id="prev_close" title="Previous Close">
+                      Prev. Close
+                     </th>
+                     <th id="openTxt">
+                      Open
+                     </th>
+                     <th id="highTxt" title="Intraday High">
+                      High
+                     </th>
+                     <th id="lowTxt" title="Intraday Low">
+                      Low
+                     </th>
+                     <th id="close">
+                      Close*
+                     </th>
+                     <th id="stockIndClosePrice" title="Indicative Close">
+                      Indicative Close
+                     </th>
+                     <th id="VWAP" title="Volume Weighted Average Price">
+                      VWAP
+                     </th>
+                     <th>
+                      <a href="#quote_notes" id="Adjusted_Price" style="text-decoration:none; color:inherit;">
+                       Adjusted Price
+                       <sup>
+                        *
+                       </sup>
+                      </a>
+                     </th>
+                    </tr>
+                   </thead>
+                  </table>
+                 </div>
+                </div>
+               </aside>
+              </div>
+              <div class="container">
+               <div id="cacontainer_wrapper">
+                <span class="CAContainer" id="currentMarketTypeContainer">
+                </span>
+                <span class="CAContainer" id="CAContainer">
+                </span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </section>
+           <div class="more_info_container more_info_container-spacing">
+            <nav class="dusty-orange-links dusty-orange-links-spacing">
+             <div class="container">
+              <div class="nav nav-tabs horizontal_tab" role="tablist">
+               <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#info-tradeinfo" id="infoTrade" role="tab">
+                <h2 id="Trade_Information_pg">
+                 Trade Information
+                </h2>
+               </a>
+               <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#info-historicaldata" id="loadHistoricalData" role="tab">
+                <h2 id="historic_data">
+                 Historical Data
+                </h2>
+               </a>
+               <a aria-selected="false" class="nav-item nav-link" href="" id="Cogencis" style="text-transform: none !important;" target="_blank">
+                <h2>
+                 Cogencis iInvest
+                </h2>
+               </a>
+              </div>
+             </div>
+            </nav>
+            <div class="tab-content pb-3">
+             <div class="tab-pane fade info-tradeinfo-spacing active show" id="info-tradeinfo" role="tabpanel">
+              <div class="container py-1 pb-0 px-0">
+               <div class="row mx-0 my-1">
+                <div class="col-md-12">
+                 <div class="series_wrap">
+                  <h2 class="series-options">
+                   Series :
+                   <ul id="seriesheader">
+                   </ul>
+                   <span class="hide" id="tech-chart">
+                    <a class="series_icon" href="#" target="_blank">
+                     <span>
+                      |
+                     </span>
+                     <svg class="tech_chart1" id="Layer_1" viewbox="0 0 108.95 75.14" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                      </defs>
+                      <path class="cls-1" d="M108.95,73.43c0,.95-.76,1.71-1.71,1.71H1.71c-.95,0-1.71-.76-1.71-1.71s.76-1.71,1.71-1.71h10.45v-29.79c0-.58.47-1.07,1.07-1.07h11.49c.58,0,1.06.49,1.06,1.07v29.8h10.05V27.33c0-.58.47-1.06,1.07-1.06h11.49c.58,0,1.06.47,1.06,1.06v44.41h10.05v-29.8c0-.58.47-1.07,1.07-1.07h11.49c.58,0,1.06.49,1.06,1.07v29.8h10.05V27.33c0-.58.47-1.06,1.07-1.06h11.49c.58,0,1.06.47,1.06,1.06v44.41h10.45c.98,0,1.74.76,1.74,1.69h0ZM13.05,28.4l29.58-18.26,22.78,14.05c.57.35,1.28.33,1.81-.02l26.82-16.54-1.16,4.28c-.24.9.3,1.84,1.21,2.08.9.24,1.84-.3,2.08-1.2l2.26-8.42c.24-.9-.3-1.84-1.21-2.08L88.81.06c-.91-.24-1.84.3-2.08,1.2-.24.91.3,1.84,1.2,2.08l4.61,1.23-26.23,16.19-22.74-14.03c-.54-.34-1.23-.37-1.81-.02L11.27,25.51c-.79.49-1.04,1.54-.55,2.33.5.8,1.54,1.04,2.33.56h0Z">
+                      </path>
+                     </svg>
+                    </a>
+                   </span>
+                   <!-- <span id="CAContainer" class="CAContainer"></span> -->
+                   <!-- <span id="currentMarketTypeContainer" class="CAContainer"></span> -->
+                  </h2>
+                 </div>
+                 <h2>
+                  <div class="regContainer" id="regContainer">
+                   <span id="regAction">
+                   </span>
+                  </div>
+                 </h2>
+                 <h2>
+                  <div class="regContainer" id="regNoteContainer">
+                   <span class="text-danger" id="regNote">
+                   </span>
+                  </div>
+                 </h2>
+                </div>
+               </div>
+               <div class="tbl_leftcol_fix tbl_tradeinfo">
+                <div class="row">
+                 <div class="col-md-3 card-spacing orderbkdiv">
+                  <div class="card">
+                   <div class="card-body">
+                    <div class="table-wrap m-0">
+                     <table class="card-table marketDepthTable-spacing" id="marketDepthTable">
+                      <thead>
+                       <tr>
+                        <th class="orderbook" colspan="4" id="orderbk">
+                         Order book
+                        </th>
+                       </tr>
+                       <tr>
+                        <th id="qty" width="15%">
+                         Qty
+                        </th>
+                        <th id="bid" width="35%">
+                         Bid(₹)
+                        </th>
+                        <th id="ask" width="35%">
+                         Ask(₹)
+                        </th>
+                        <th id="qty" width="15%">
+                         Qty
+                        </th>
+                       </tr>
+                      </thead>
+                     </table>
+                    </div>
+                   </div>
+                   <div class="card-footer order_book">
+                    <div class="row">
+                     <div class="col-md-6 col-sm-12 col-6 pe-0 ps-0">
+                      <strong>
+                       <span id="BuyQty">
+                        Buy Quantity
+                       </span>
+                      </strong>
+                      <br/>
+                      <i>
+                       <span class="bold" id="orderBuyTq">
+                        -
+                       </span>
+                      </i>
+                     </div>
+                     <div class="col-md-6 col-sm-12 pe-0 col-6">
+                      <strong>
+                       <span id="sellqty">
+                        Sell Quantity
+                       </span>
+                      </strong>
+                      <br/>
+                      <i>
+                       <span class="bold" id="orderSellTq">
+                        -
+                       </span>
+                      </i>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="col-md-3 card-spacing tradeinfodiv">
+                  <div class="card">
+                   <div class="card-body">
+                    <div class="table-wrap m-0">
+                     <table class="card-table" role="presentation">
+                      <thead>
+                       <tr>
+                        <th colspan="2" id="Trade_Information_pg">
+                         Trade Information
+                        </th>
+                       </tr>
+                      </thead>
+                      <tbody>
+                       <tr>
+                        <td id="tradevolshare" width="69%">
+                         Traded Volume (Lakhs)
+                        </td>
+                        <td class="text-end" width="31%">
+                         <span class="bold" data-nse-translate="numberonly" id="orderBookTradeVol">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td id="tradevalshare">
+                         Traded Value (₹ Cr.)
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" data-nse-translate="number" id="orderBookTradeVal">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td id="totalmarketcap">
+                         Total Market Cap (₹ Cr.)
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" data-nse-translate="number" id="orderBookTradeTMC">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td id="fltfreemarket">
+                         Free Float Market Cap (₹ Cr.)
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="orderBookTradeFFMC">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td id="impact_cost">
+                         Impact cost
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="orderBookTradeIC">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                         <span id="percOfDeliverable_TradedQty">
+                          % of Deliverable / Traded
+                          <br>
+                           Quantity
+                          </br>
+                         </span>
+                         <i class="fa fa-info-circle cursor_pointer" data-bs-target="#modal_delivery_position" data-bs-toggle="modal" title="Click here to view the % of Deliverable / Traded Quantity">
+                         </i>
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="orderBookDeliveryTradedQty">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                         <span id="appl_Margin_Rate">
+                          Applicable Margin Rate
+                         </span>
+                         <i class="fa fa-info-circle cursor_pointer" data-bs-target="#modal_value_at_risk" data-bs-toggle="modal" title="Click here to view the Application Margin Rate">
+                         </i>
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="orderBookAppMarRate">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td id="FaceValue">
+                         Face Value
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="mainFaceValue">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr class="marklot">
+                        <td id="market_Lot">
+                         Market Lot
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="marketLot">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div id="security-industry">
+                 </div>
+                 <div class="col-md-3 card-spacing priceinfodiv">
+                  <div class="card">
+                   <div class="card-body">
+                    <div class="table-wrap m-0">
+                     <table class="card-table" role="presentation">
+                      <thead>
+                       <tr>
+                        <th colspan="2" id="priceInformationHeading">
+                         Price Information
+                        </th>
+                       </tr>
+                      </thead>
+                      <tbody>
+                       <tr>
+                        <td>
+                         <span id="wkhi">
+                          52 Week High
+                         </span>
+                         <i id="week52HighDate">
+                         </i>
+                        </td>
+                        <td class="text-end" width="31%">
+                         <span class="bold" id="week52highVal">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                         <span id="wklo">
+                          52 Week Low
+                         </span>
+                         <i id="week52LowDate">
+                         </i>
+                        </td>
+                        <td class="text-end" width="31%">
+                         <span class="bold" id="week52lowVal">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td id="upperBandHeading">
+                         Upper Band
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="upperbandVal">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td id="lowerBandHeading">
+                         Lower Band
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="lowerbandVal">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td id="priceBandHeading">
+                         Price Band (%)
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="pricebandVal">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr class="daily_volatility">
+                        <td id="daily_volatility">
+                         Daily Volatility
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="orderBookTradeDV">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr class="annual_volatility">
+                        <td id="annual_volatility">
+                         Annualised Volatility
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="orderBookTradeAV">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr class="iNavDisplay">
+                        <td>
+                         i-NAV
+                        </td>
+                        <td class="text-end">
+                         <span class="bold" id="iNavValue">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                       <tr class="tickSizeDisplay">
+                        <td>
+                         Tick Size
+                        </td>
+                        <td class="text-right">
+                         <span class="bold" id="tickSize">
+                          -
+                         </span>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="col-md-3 secinfodiv">
+                  <div class="card">
+                   <div class="card-body">
+                    <div class="table-wrap m-0">
+                     <table class="card-table" id="securities_info_table" role="presentation">
+                      <thead>
+                       <tr>
+                        <th colspan="2" id="Securities_Info_New">
+                         Securities Information
+                        </th>
+                       </tr>
+                      </thead>
+                     </table>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="mt-4 w-100">
+                <div class="container">
+                 <div class="d-flex flex-row mt-1 pe-0 vtab_container border-0 position-relative">
+                  <div class="sidebar" id="sidebar">
+                   <a class="toggle_btn">
+                    <i class="fas fa-angle-right">
+                    </i>
+                   </a>
+                   <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="tablist">
+                    <li class="nav-item">
+                     <a aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#Tradedetails" id="tradedetails" role="tab">
+                      Dashboard
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="true" class="nav-link" data-bs-toggle="tab" href="#Announcements" id="announcements" role="tab">
+                      Announcements
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="true" class="nav-link" data-bs-toggle="tab" href="#AnnouncementsXbrl" id="announcementsxbrl" role="tab">
+                      Announcements XBRL
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Annual_Reports" id="annualReports" role="tab">
+                      Annual Reports
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="true" class="nav-link" data-bs-toggle="tab" href="#Corp_BRSR" id="brsr" role="tab">
+                      Business Responsibility and Sustainability Report
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Board_Meetings" id="boardMeetings" role="tab">
+                      Board Meetings
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Corporate_Actions" id="corporateActions" role="tab">
+                      Corporate Actions
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Company_Directory" id="companyDirectory" role="tab">
+                      Company Directory
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Corp_Governance_Status" id="corporateGovernance" role="tab">
+                      Corporate Governance
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#info-corporateInfo" id="corpInfo" role="tab">
+                      Corporate Information
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Daily_Buyback" id="dailyBuyBack" role="tab">
+                      Daily Buy Back
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="true" class="nav-link" data-bs-toggle="tab" href="#EventCalender" id="eventcalender" role="tab">
+                      Event Calendar
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Financial_Results" id="financialResults" role="tab">
+                      Financial Results
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Financial_Results_Comparision" id="financialResultsComparision" role="tab">
+                      Financial Results Comparision
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#FurtherIssuesXbrlFillings" id="issueOfferDocument" role="tab">
+                      Further Issues XBRL Fillings
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Insider_Trading" id="insiderTrading" role="tab">
+                      Insider Trading
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Insider_Trading_Plan" id="insiderTradingPlan" role="tab">
+                      Insider Trading-Plan
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Integrated_Filing" id="integratedFiling" role="tab">
+                      Integrated Filing XBRL
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#Investor_Complaints" id="investorComplaints" role="tab">
+                      Investor Complaints
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#promoter_pledge" id="PromoterEncumbranceDetails" role="tab">
+                      Promoter Encumbrance Details
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#IssueOfferDocuments" id="issueOfferDocument1" role="tab">
+                      Issue Offer Documents / Issue Summary Documents
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#RPT" id="rpt" role="tab">
+                      Related Party Transactions
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#SAST_Regulations" id="sastRegulations" role="tab">
+                      SAST Regulations
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#Statement_Deviation" id="statementdeviation" role="tab">
+                      Statement of Deviation/Variation
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#SDD_PIT" id="sddPit" role="tab">
+                      System Driven Disclosures - PIT
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#SDD_SAST" id="sddSast" role="tab">
+                      System Driven Disclosures - SAST
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#Secretarial_Compliance" id="SecretarialCompliance" role="tab">
+                      Secretarial Compliance
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#Share_Transfers" id="ShareTransfers" role="tab">
+                      Share Transfers
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#Shareholders_Meeting" id="ShareholdersMeeting" role="tab">
+                      Shareholder's Meetings
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#Shareholding_Patterns" id="shareholdingPatterns" role="tab">
+                      Shareholding Patterns
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#Shareholding_Patterns_Sdd" id="shareholdingPatternsSdd" role="tab">
+                      Shareholding Patterns SDD
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#Stmt_Of_Impact" id="stmtOnImpact" role="tab">
+                      Statement of Impact Of Audit Qualification
+                     </a>
+                    </li>
+                    <li class="nav-item" id="show-uhp-tab-link" style="display: none">
+                     <a class="nav-link" data-bs-toggle="tab" href="#Unitholding_Patterns" id="unitholdingPatterns" role="tab">
+                      Unitholding Patterns
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="tab" href="#Voting_Results" id="votingResults" role="tab">
+                      Voting Results
+                     </a>
+                    </li>
+                   </ul>
+                  </div>
+                  <div class="tab-content tab-content-slider">
+                   <div class="tab-pane fade show active" id="Tradedetails" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-6 announcementdiv">
+                      <div class="card p-2">
+                       <div class="tab-content p-0 tabs-content-wrapper">
+                        <div class="tab-pane fade show active" id="corporate-announcement">
+                         <div class="d-flex justify-content-between align-items-center header-wrapper">
+                          <h2 class="common-header" id="announcements">
+                           Announcements
+                          </h2>
+                          <img alt="View All" height="10" id="ann_quoteRedirect" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                         </div>
+                         <div class="table-wrap">
+                          <div class="common_table customHeight-table w-100 border-0 table-ellipses" id="tableTopCorpAnnouncements">
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="col-md-6 even_spacing intradaydiv">
+                      <div class="card">
+                       <h2 class="common-header graph_header" id="Intraday_Chart">
+                        Intraday Chart
+                        <span class="hide" id="tech-chart-graph">
+                         <a class="series_icon" href="#" style="float: right;" target="_blank">
+                          <svg class="tech_chart1" id="Layer_1" viewbox="0 0 108.95 75.14" xmlns="http://www.w3.org/2000/svg">
+                           <defs>
+                           </defs>
+                           <path class="cls-1" d="M108.95,73.43c0,.95-.76,1.71-1.71,1.71H1.71c-.95,0-1.71-.76-1.71-1.71s.76-1.71,1.71-1.71h10.45v-29.79c0-.58.47-1.07,1.07-1.07h11.49c.58,0,1.06.49,1.06,1.07v29.8h10.05V27.33c0-.58.47-1.06,1.07-1.06h11.49c.58,0,1.06.47,1.06,1.06v44.41h10.05v-29.8c0-.58.47-1.07,1.07-1.07h11.49c.58,0,1.06.49,1.06,1.07v29.8h10.05V27.33c0-.58.47-1.06,1.07-1.06h11.49c.58,0,1.06.47,1.06,1.06v44.41h10.45c.98,0,1.74.76,1.74,1.69h0ZM13.05,28.4l29.58-18.26,22.78,14.05c.57.35,1.28.33,1.81-.02l26.82-16.54-1.16,4.28c-.24.9.3,1.84,1.21,2.08.9.24,1.84-.3,2.08-1.2l2.26-8.42c.24-.9-.3-1.84-1.21-2.08L88.81.06c-.91-.24-1.84.3-2.08,1.2-.24.91.3,1.84,1.2,2.08l4.61,1.23-26.23,16.19-22.74-14.03c-.54-.34-1.23-.37-1.81-.02L11.27,25.51c-.79.49-1.04,1.54-.55,2.33.5.8,1.54,1.04,2.33.56h0Z">
+                           </path>
+                          </svg>
+                         </a>
+                        </span>
+                       </h2>
+                       <div id="equityIntraGraph" style="height:270px">
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="row mt-4">
+                     <div class="col-md-4 corpactiondiv">
+                      <div class="card p-2">
+                       <div class="tab-content p-0 tabs-content-wrapper">
+                        <div class="tab-pane fade show active" id="corporate-actions">
+                         <div class="d-flex justify-content-between align-items-center header-wrapper">
+                          <h2 class="common-header" id="corporateActionsHead">
+                           Corporate Actions
+                          </h2>
+                          <img alt="View All" height="10" id="corp_quoteRedirect" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                         </div>
+                         <div class="table-wrap">
+                          <div class="common_table customHeight-table w-100 border-0 table-ellipses" id="tableTopCorpActions">
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="col-md-4 boardmeetingdiv">
+                      <div class="card p-2 even_spacing">
+                       <div class="tab-content p-0 tabs-content-wrapper">
+                        <div class="tab-pane fade show active" id="board-meetings">
+                         <div class="d-flex justify-content-between align-items-center header-wrapper">
+                          <h2 class="common-header" id="boardMeetingsHead">
+                           Board Meetings
+                          </h2>
+                          <img alt="View All" height="10" id="board_quoteRedirect" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                         </div>
+                         <div class="table-wrap">
+                          <div class="common_table customHeight-table w-100 border-0 table-ellipses" id="tabletopBoardMeetings">
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                     <div class="col-md-4 securitystatusdiv">
+                      <div class="card p-2 even_spacing">
+                       <div class="tab-content p-0 tabs-content-wrapper">
+                        <div class="tab-pane fade show active" id="security-status-tab">
+                         <div class="d-flex justify-content-between align-items-center header-wrapper">
+                          <h2 class="common-header" id="secStatusLang">
+                           Security Status
+                          </h2>
+                         </div>
+                         <div class="table-wrap m-0">
+                          <table class="w-100 common_table border-0 table-fixed" id="more_securities_info_table" role="presentation">
+                           <thead>
+                            <tr>
+                             <th id="title">
+                              Title
+                             </th>
+                             <th>
+                              Details
+                             </th>
+                            </tr>
+                           </thead>
+                          </table>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="row mt-4">
+                     <div class="col-md-12">
+                      <div class="row">
+                       <div class="col-md-6 financialresultdiv">
+                        <div class="card p-2">
+                         <div class="tab-content tabs-content-wrapper p-0">
+                          <div class="tab-pane fade show active" id="corporate-results">
+                           <div class="d-flex justify-content-between align-items-center header-wrapper">
+                            <h2 class="common-header" id="financialResultsHead">
+                             Financial Results (Amount in Lakhs.)
+                            </h2>
+                            <img alt="View All" height="10" id="fin_quoteRedirect" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </div>
+                           <div class="table-wrap">
+                            <div class="common_table customHeight-table w-100 border-0 border-0" id="tabletopFinancialResults">
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                       <div class="col-md-6 shareholdingdiv">
+                        <div class="card p-2 even_spacing">
+                         <div class="tab-content tabs-content-wrapper p-0">
+                          <div class="tab-pane fade show active" id="shareholding-patterns">
+                           <div class="d-flex justify-content-between align-items-center header-wrapper">
+                            <h2 class="common-header" id="shareholdingPatternsHead">
+                             Shareholding Patterns (in %)
+                            </h2>
+                            <img alt="View All" height="10" id="shp_quoteRedirect" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </div>
+                           <div class="table-wrap">
+                            <div class="common_table customHeight-table w-100 border-0" id="tabletopSHP">
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="row mt-4">
+                     <div class="col-md-12">
+                      <div>
+                       <p>
+                        <a class="click_title" href="/market-data/block-deal-watch" target="_blank">
+                         Click here
+                        </a>
+                        for Block Deals
+                       </p>
+                      </div>
+                      <div class="note_container mt-2">
+                       <!-- <div id="getQuoteEquityTradeInforamtionNotes"></div> -->
+                       <h3>
+                        <span id="Market-Note">
+                         Note :
+                        </span>
+                       </h3>
+                       <p>
+                        To Read all the information, please
+                        <a class="click_title" data-bs-target="#modal_note_container" data-bs-toggle="modal">
+                         Click here
+                        </a>
+                       </p>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Announcements" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2 id="corporateAnnouncements">
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="home-corporateannouncements-tab">
+                        Corporate Announcements
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-annc-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="row align-items-center mb-2">
+                     <div class="col-md-4">
+                      <div class="input-group mt-md-2">
+                       <label class="input-group-prepend" id="EQsubject">
+                        <span class="input-group-text">
+                         Subject
+                        </span>
+                       </label>
+                       <input aria-controls="eqSubjectContrl" aria-expanded="false" aria-labelledby="EQsubject" class="form-control with_radius subjectVal typeahead subjectAutoComplete" placeholder="Search by Keyword" type="text"/>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="row mt-3">
+                     <div class="col-md-12">
+                      <div class="block-detail-dates-box">
+                       <div class="row">
+                        <div class="col-md-12">
+                         <ul class="dayslisting">
+                          <li>
+                           <a aria-current="false" class="preventDefault" data-val="1D" href="#">
+                            1D
+                           </a>
+                          </li>
+                          <li>
+                           <a aria-current="false" class="preventDefault" data-val="1W" href="#">
+                            1W
+                           </a>
+                          </li>
+                          <li>
+                           <a aria-current="false" class="preventDefault" data-val="1M" href="#">
+                            1M
+                           </a>
+                          </li>
+                          <li>
+                           <a aria-current="false" class="preventDefault" data-val="3M" href="#">
+                            3M
+                           </a>
+                          </li>
+                          <li>
+                           <a aria-current="false" class="active" data-val="6M" href="#">
+                            6M
+                           </a>
+                          </li>
+                          <li>
+                           <a aria-current="false" class="preventDefault" data-val="1Y" href="#">
+                            1Y
+                           </a>
+                          </li>
+                          <li class="customFilter">
+                           <a data-val="Custom" href="#">
+                            Custom
+                           </a>
+                          </li>
+                          <li class="clearFilter">
+                           <a data-val="Clear" href="#">
+                            Clear
+                           </a>
+                          </li>
+                         </ul>
+                         <div class="dateMsg hide">
+                          Select Date Period
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="row mt-3 hide">
+                     <div class="col-md-12">
+                      <div class="block-detail-dates-box">
+                       <div class="row">
+                        <div class="col-md-12">
+                         <div class="datebox_wrap">
+                          <div class="row date-format-relate">
+                           <div class="col-md-4">
+                            <label class="labeldate" id="EQfrom">
+                             From
+                            </label>
+                            <input aria-labelledby="EQfrom" class="startDate-block-deals dtpicker" data-fromdate="12-Nov-2018" id="anncEqFmDate" readonly="">
+                            </input>
+                           </div>
+                           <div class="col-md-4">
+                            <label class="labeldate" id="EQto">
+                             To
+                            </label>
+                            <input aria-labelledby="EQto" class="endDate-block-deals dtpicker" data-todate="12-Jan-2019" id="anncToFmDate" readonly="">
+                            </input>
+                           </div>
+                           <div class="col-md-2">
+                            <button class="btn flat-button-white w-100 filterbtn" type="submit">
+                             GO
+                            </button>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpAnnouncementTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="AnnouncementsXbrl" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2 id="corporateAnnouncementsXbrl">
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="home-corporateannouncementsXbrl-tab">
+                        Announcement XBRL
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-annc-xbrl-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="row mb-2 col-md-12">
+                     <div class="input-group">
+                      <label class="input-group-prepend" id="annEventType">
+                       <span class="input-group-text">
+                        Announcement Type
+                       </span>
+                      </label>
+                      <div class="custom_select">
+                       <select id="event_type">
+                        <option selected="" title="Change in Directors/KMP/SMP/Auditor/RTA" value="annxbrl">
+                         Change in Directors/KMP/SMP/Auditor/RTA
+                        </option>
+                        <option title="Outcome of Board Meeting" value="annxbrloutcome">
+                         Outcome of Board Meeting
+                        </option>
+                        <option title="Restructuring- Regulation 30" value="annxbrlReg30">
+                         Restructuring- Regulation 30
+                        </option>
+                        <option title="Fraud/Default/Arrest PARA A" value="annxbrlannFraud">
+                         Fraud/Default/Arrest PARA A
+                        </option>
+                        <option title="Corporate Debt Restructuring" value="annxbrlcdr">
+                         Corporate Debt Restructuring
+                        </option>
+                        <option title="Notice of Shareholders Meeting" value="annxbrlshm">
+                         Notice of Shareholders Meeting
+                        </option>
+                        <option title="Issuance/Allotment/Alteration/Restriction on transferability of securities- Para A" value="annxbrlfundRaising">
+                         Issuance/Allotment/Alteration/Restriction on transferability of securities- Para A
+                        </option>
+                        <option title="Agreements/Contracts/Arrangements/ MOU PARA A" value="annxbrlagr">
+                         Agreements/Contracts/Arrangements/ MOU PARA A
+                        </option>
+                        <option title="One time settlement / Inter-Creditors Aggrement" value="annxbrlannOts">
+                         One time settlement / Inter-Creditors Aggrement
+                        </option>
+                        <option title="Awarding or Bagging of Orders/Contracts" value="annaward">
+                         Awarding or Bagging of Orders/Contracts
+                        </option>
+                       </select>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 minHeight150 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpAnnouncementXbrlTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Corp_BRSR" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="home-brsr-tab">
+                        Business Responsibility and Sustainability Report
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-brsr-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpBrsrTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Board_Meetings" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="home-boardMeetings-tab">
+                        Board Meetings
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end my-2 ms-3">
+                        <a href="" id="corp-bm-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpBoardMeetingTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Corporate_Actions" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="home-corporateActions-tab">
+                        Corporate Actions
+                       </span>
+                      </h2>
+                      <div class="link-wrap text-end">
+                       <a href="" id="corp-action-link">
+                        View All
+                        <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                       </a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap mt-1 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpActionTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Corp_Governance_Status" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2 id="corporateGovernance">
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span>
+                        Corporate Governance
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel ms-3">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-gov-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpGovernanceTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Financial_Results" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="Financial_Results_tab">
+                        Integrated Filing-Financials
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel ms-3">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-integratedfilingfinancials-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="integratedFilingFinancialResultsTable">
+                     </div>
+                    </div>
+                    <div class="row mt-4">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <span id="Financial_Results_tab">
+                        Financial Results
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel ms-3">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-financialresult-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="financialResultsTable">
+                     </div>
+                    </div>
+                    <div class="note_container mt-3">
+                     <h3>
+                      <span id="Market-Note">
+                       Note
+                      </span>
+                     </h3>
+                     <ul>
+                      <li>
+                       All Values are in ₹ Lakhs.
+                      </li>
+                      <li>
+                       Kindly note that all the financial results submitted by the Company for quarter ended March 2025 and thereafter will be available under Integrated Filing - Financials.
+                       <a class="corp-integratedfiling-link" href="">
+                        click here
+                       </a>
+                       .
+                      </li>
+                     </ul>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Secretarial_Compliance" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span>
+                        Secretarial Compliance
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-sc-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpSecretarialComplianceTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Statement_Deviation" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span>
+                        Statement of Deviation/Variation
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-statement-deviation-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpStatementDeviationTable">
+                     </div>
+                    </div>
+                    <div class="note_container mt-3">
+                     <h3>
+                      <span id="Market-Note">
+                       Note
+                      </span>
+                     </h3>
+                     <ul>
+                      <li>
+                       Kindly note that all the Statement of Deviation/Variation submitted by the Company for quarter ended March 2025 and thereafter will be available under Integrated Filing - Financials.
+                       <a class="corp-integratedfiling-link" href="">
+                        click here
+                       </a>
+                       .
+                      </li>
+                     </ul>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="RPT" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       Related Party Transactions
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-rpt-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpRPTTable">
+                     </div>
+                    </div>
+                    <div class="note_container mt-3">
+                     <h3>
+                      <span id="Market-Note">
+                       Note
+                      </span>
+                     </h3>
+                     <ul>
+                      <li>
+                       Kindly note that all the Related Party Transactions submitted by the Company for quarter ended March 2025 and thereafter will be available under Integrated Filing - Financials.
+                       <a class="corp-integratedfiling-link" href="">
+                        click here
+                       </a>
+                       .
+                      </li>
+                     </ul>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Share_Transfers" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span>
+                        Share Transfers
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-share-transfer-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpShareTransferTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="SDD_PIT" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span>
+                        Insider Trading (PIT) - Annual
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-sdd-pit-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpSddSastPitTable">
+                      <table class="common_table tableScroll alt_row w-100" id="table-pitAnnual">
+                       <thead>
+                        <tr class="withborder">
+                         <th class="vam" id="companyNameSec" rowspan="3" width="14%">
+                          <a class="" href="javascript:;" id="pitAnnualId">
+                           Company Name
+                          </a>
+                         </th>
+                         <th class="vam" id="nameOfPerson" rowspan="3" width="12%">
+                          Name of person
+                         </th>
+                         <th class="vam" id="categoryOfPerson" rowspan="3" width="9%">
+                          Category of Person
+                         </th>
+                         <th class="vam" id="typeEquityDerivative" rowspan="3" width="6%">
+                          <a class="" href="javascript:;" id="typeSortId">
+                           Type
+                          </a>
+                         </th>
+                         <th class="text-center" colspan="3" id="securitiesAcquired" width="30%">
+                          Securities Acquired/Disposed (No. of shares)
+                         </th>
+                         <th class="text-center" id="securitiesHeld" rowspan="2" width="9%">
+                          Securities Held – No. of Shares (POST)
+                         </th>
+                         <th class="text-center" colspan="2" id="dateOfAllotment" width="20%">
+                          Date of allotment advice/acquisition of shares/sale of shares specify
+                         </th>
+                        </tr>
+                        <tr class="withborder">
+                         <th class="text-center" id="buy" width="10%">
+                          Buy
+                         </th>
+                         <th class="text-center" id="salePledge" width="10%">
+                          Sale / Pledge Invocation
+                         </th>
+                         <th class="text-center" id="creationPledge" width="10%">
+                          Pledge Creation / release
+                         </th>
+                         <th class="text-center" id="From" width="10%">
+                          From
+                         </th>
+                         <th class="text-center" id="to" width="10%">
+                          To
+                         </th>
+                        </tr>
+                       </thead>
+                      </table>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Shareholders_Meeting" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span>
+                        Shareholder's Meetings
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-shareholders-meeting-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpShareholdersMeetingTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Shareholding_Patterns" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span>
+                        Shareholding Pattern (in %)
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-shp-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpSharePatternTable">
+                     </div>
+                    </div>
+                    <!-- shareholding Modal -->
+                    <div class="modal qlinks_modal fullView" id="shareholding_modal">
+                    </div>
+                    <!-- @end shareholding Modal -->
+                   </div>
+                   <div class="tab-pane fade" id="Unitholding_Patterns" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span>
+                        Unitholding Patterns
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpUnitPatternTable">
+                     </div>
+                    </div>
+                    <div class="link-wrap text-end my-2">
+                     <a href="" id="corp-uhp-link">
+                      View All
+                      <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                     </a>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Insider_Trading" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="insider_trading_tab">
+                        Insider Trading
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center ms-3">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-insidertrading-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpInsiderTradingTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Insider_Trading_Plan" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="insider_trading_plan_tab">
+                        Insider Trading-Plan
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center ms-3">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-insidertradingplan-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpInsiderTradingPlanTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Integrated_Filing" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="insider_trading_tab">
+                        Integrated Filing XBRL
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center ms-3">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-integratedfiling-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpIntegratedFilingTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="SAST_Regulations" role="tabpanel">
+                    <div class="common-tabs">
+                     <nav>
+                      <div class="nav nav-tabs" role="tablist">
+                       <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#sast_29" id="equity-sast" role="tab">
+                        Regulation 29
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#sast_31Post" id="equity-sast3132post" role="tab">
+                        Regulation 31(1) &amp; (2) Post
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#sast_encumbrance" id="equity-sast3132prior" role="tab">
+                        Reason for Encumbrance
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#sast_pledged" id="equity-pledgeddata" role="tab">
+                        Pledged Data
+                       </a>
+                      </div>
+                     </nav>
+                     <div class="tab-content my-3 p-0" style="flex: 100%;">
+                      <div class="tab-pane fade show active" id="sast_29" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-reg29-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpSast29Table">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="sast_31Post" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-reg31-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpSast31PostTable">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="sast_encumbrance" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-encumbrance-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpEncumbranceTable">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="sast_pledged" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-pledged-data-link">
+                         View All
+                         <img alt="View All" height="10" idth="14" src="/assets/images/Read_more_CTA.svg" title="View All"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpPledgedTable">
+                         <table class="common_table customHeight-table tableScroll alt_row w-100 tableWidth-1500" id="table-CFsastpledged">
+                          <thead>
+                           <tr class="withborder">
+                            <th width="10%">
+                            </th>
+                            <th width="8%">
+                            </th>
+                            <th class="text-center" colspan="2" id="totalPH" width="16%">
+                             Total Promoter Holding
+                            </th>
+                            <th width="10%">
+                            </th>
+                            <th class="text-center" colspan="3" id="promoterSharesLastQrtr" width="24%">
+                             Promoter shares Encumbered as of last quarter
+                            </th>
+                            <th width="8%">
+                            </th>
+                            <th class="text-center" colspan="4" id="noSharesPledged" width="24%">
+                             No. of shares pledged in the depository system
+                            </th>
+                           </tr>
+                           <tr class="withborder">
+                            <th aria-sort="none" id="nameCompany" role="columnheader" width="10%">
+                             <a class="toggleIcon" href="#" id="equity-companySortId">
+                              Name of Company
+                             </a>
+                            </th>
+                            <th id="totalNoIssued" width="8%">
+                             Total no. of issued shares A+B+C
+                            </th>
+                            <th id="sharesNo" width="8%">
+                             No. of shares (A)
+                            </th>
+                            <th id="percentABC" width="8%">
+                             % A/(A+B+C)
+                            </th>
+                            <th id="totalPublicHoldingPerctB" width="10%">
+                             Total Public Holding  (%)B
+                            </th>
+                            <th id="sharesNoX" width="8%">
+                             No. of shares (X)
+                            </th>
+                            <th id="promoterSharesPercnt" width="8%">
+                             % of Promoter shares (X/A)
+                            </th>
+                            <th id="totalSharesPercnt" width="8%">
+                             % of total shares [X/(A+B+C)]
+                            </th>
+                            <th id="disclosurePromoters" width="8%">
+                             Disclosure made by Promoters
+                            </th>
+                            <th id="sharesPledged" width="8%">
+                             No. of shares pledged
+                            </th>
+                            <th id="dematShares" width="8%">
+                             Total no. of demat shares
+                            </th>
+                            <th id="pledgePercent" width="4%">
+                             (%) Pledge/ Demat
+                            </th>
+                            <th id="values" width="4%">
+                             Values (Rs.Cr.)
+                            </th>
+                           </tr>
+                           <tr class="withborder">
+                            <th class="text-center" id="oneCol" width="10%">
+                             1
+                            </th>
+                            <th class="text-center" id="twoCol" width="8%">
+                             2
+                            </th>
+                            <th class="text-center" colspan="2" id="threeCol" width="16%">
+                             3
+                            </th>
+                            <th class="text-center" id="fourCol" width="10%">
+                             4
+                            </th>
+                            <th class="text-center" colspan="3" id="fiveCol" width="24%">
+                             5
+                            </th>
+                            <th class="text-center" id="sixCol" width="8%">
+                             6
+                            </th>
+                            <th class="text-center" colspan="3" id="sevenCol" width="24%">
+                             7
+                            </th>
+                           </tr>
+                          </thead>
+                         </table>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="IssueOfferDocuments" role="tabpanel">
+                    <div class="common-tabs">
+                     <nav>
+                      <div class="nav nav-tabs" role="tablist">
+                       <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#corpissueofferDocument" id="issueofferdocument" role="tab">
+                        Issue Offer Document
+                       </a>
+                       <a aria-selected="true" class="nav-item nav-link" data-bs-toggle="tab" href="#issuesummaryDocument" id="issuesummarydocumentload" role="tab">
+                        Issue Summary Document
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#rightsandqip" id="issuerights" role="tab">
+                        Rights &amp; QIP
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#schemeofarrangement" id="schemeofarrangementmain" role="tab">
+                        Scheme of Arrangements
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#informationmemorandum" id="informationmemorandummain" role="tab">
+                        Information Memorandum
+                       </a>
+                      </div>
+                     </nav>
+                     <div class="tab-content my-3 p-0" style="flex: 100%;">
+                      <div class="tab-pane fade show active" id="corpissueofferDocument" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-issue-offer-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpIssueOfferTable">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="issuesummaryDocument" role="tabpanel">
+                       <div class="row mb-2 col-md-12">
+                        <div class="input-group">
+                         <label class="input-group-prepend" id="annEventType">
+                          <span class="input-group-text">
+                           ISD Type
+                          </span>
+                         </label>
+                         <div class="custom_select">
+                          <select aria-labelledby="annEventType" id="summary_offer_event_type">
+                           <option selected="" title="Equity Buyback - Open market" value="isdOpenBuyback">
+                            Equity Buyback - Open market
+                           </option>
+                           <option title="Equity Buyback - Tender" value="isdTenderBuyback">
+                            Equity Buyback - Tender
+                           </option>
+                           <option title="Open Offer - Takeover Pre" value="openOfferPre">
+                            Open Offer - Takeover Pre
+                           </option>
+                           <option title="Open Offer - Takeover Post" value="openOfferPost">
+                            Open Offer - Takeover Post
+                           </option>
+                           <option title="Voluntary Delisting - Pre" value="isdPreVoluntary">
+                            Voluntary Delisting - Pre
+                           </option>
+                           <option title="Voluntary Delisting - Post" value="isdPostVoluntary">
+                            Voluntary Delisting - Post
+                           </option>
+                          </select>
+                         </div>
+                        </div>
+                       </div>
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-issue-summary-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpIssueSummaryTable">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="rightsandqip" role="tabpanel">
+                       <div class="common-tabs">
+                        <nav>
+                         <div class="nav nav-tabs" role="tablist">
+                          <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#rightsdatatab" id="issuerightsinner" role="tab">
+                           Rights
+                          </a>
+                          <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#qipdatatab" id="issueqip" role="tab">
+                           QIP
+                          </a>
+                         </div>
+                        </nav>
+                        <div class="tab-content my-3 p-0" style="flex: 100%;">
+                         <div class="tab-pane fade show active" id="rightsdatatab" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-rights-qip-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpRightsQipTable">
+                           </div>
+                          </div>
+                         </div>
+                         <div class="tab-pane fade" id="qipdatatab" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-qip-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpIssueQipTable">
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="schemeofarrangement" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-scheme-of-arrangement-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpSchemeArrangementTable">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="informationmemorandum" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-information-memorandum-link">
+                         ViewAll
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpInformationMemorandumTable">
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="FurtherIssuesXbrlFillings" role="tabpanel">
+                    <div class="common-tabs">
+                     <nav>
+                      <div class="nav nav-tabs custom_tabs_flex" role="tablist">
+                       <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#americandepositoryreceiptip" id="american_depository_receipt_tab" role="tab">
+                        American Depository Receipt
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#globaldepositoryreceiptip" id="global_depository_receipt_tab" role="tab">
+                        Global Depository Receipt
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#qualifiedinstitutionalplacementip" id="qualified_institutional_placement_tab" role="tab">
+                        Qualified Institutional Placement
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#foreigncurrencyconvertibleip" id="foreign_currency_convertible_tab" role="tab">
+                        Foreign Currency Convertible
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#preferentialissueip" id="preferential_issue_tab" role="tab">
+                        Preferential Issue
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#rightissueip" id="right_issue_tab" role="tab">
+                        Right Issue
+                       </a>
+                      </div>
+                     </nav>
+                     <div class="tab-content my-3 p-0" style="flex: 100%;">
+                      <div class="tab-pane fade show active" id="americandepositoryreceiptip" role="tabpanel">
+                       <div class="common-tabs">
+                        <nav>
+                         <div class="nav nav-tabs" role="tablist">
+                          <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#americandepositoryreceiptiptab" id="american_depository_inPrinciple_tab" role="tab">
+                           In-Principle
+                          </a>
+                          <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#americandepositoryreceiptls" id="american_depository_listingStage_tab" role="tab">
+                           Listing Stage
+                          </a>
+                         </div>
+                        </nav>
+                        <div class="tab-content my-3 p-0" style="flex: 100%;">
+                         <div class="tab-pane fade show active" id="americandepositoryreceiptiptab" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-american-depository-ip-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpAmericanDepositoryIpTable">
+                           </div>
+                          </div>
+                         </div>
+                         <div class="tab-pane fade" id="americandepositoryreceiptls" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-american-depository-ls-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpAmericanDepositoryLsTable">
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="globaldepositoryreceiptip" role="tabpanel">
+                       <div class="common-tabs">
+                        <nav>
+                         <div class="nav nav-tabs" role="tablist">
+                          <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#globaldepositoryreceiptiptab" id="globaldepositoryreceiptip_inner" role="tab">
+                           In-Principle
+                          </a>
+                          <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#globaldepositoryreceiptls" id="globaldepositoryreceiptls_inner" role="tab">
+                           Listing Stage
+                          </a>
+                         </div>
+                        </nav>
+                        <div class="tab-content my-3 p-0" style="flex: 100%;">
+                         <div class="tab-pane fade show active" id="globaldepositoryreceiptiptab" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-global-depository-ip-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpGlobalDepositoryIpTable">
+                           </div>
+                          </div>
+                         </div>
+                         <div class="tab-pane fade" id="globaldepositoryreceiptls" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-global-depository-ls-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpGlobalDepositoryLsTable">
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="qualifiedinstitutionalplacementip" role="tabpanel">
+                       <div class="common-tabs">
+                        <nav>
+                         <div class="nav nav-tabs" role="tablist">
+                          <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#qualifiedinstitutionalplacementiptab" id="qualifiedinstitutionalplacementip_inner" role="tab">
+                           In-Principle
+                          </a>
+                          <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#qualifiedinstitutionalplacementls" id="qualifiedinstitutionalplacementls_inner" role="tab">
+                           Listing Stage
+                          </a>
+                         </div>
+                        </nav>
+                        <div class="tab-content my-3 p-0" style="flex: 100%;">
+                         <div class="tab-pane fade show active" id="qualifiedinstitutionalplacementiptab" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-qualified-institutional-ip-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpQualifiedInstitutionIpTable">
+                           </div>
+                          </div>
+                         </div>
+                         <div class="tab-pane fade" id="qualifiedinstitutionalplacementls" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-qualified-institutional-ls-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpQualifiedInstitutionLsTable">
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="foreigncurrencyconvertibleip" role="tabpanel">
+                       <div class="common-tabs">
+                        <nav>
+                         <div class="nav nav-tabs" role="tablist">
+                          <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#foreigncurrencyconvertibleiptab" id="equity-foreigncurrencyconvertibleip" role="tab">
+                           In-Principle
+                          </a>
+                          <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#foreigncurrencyconvertiblels" id="equity-foreigncurrencyconvertiblels" role="tab">
+                           Listing Stage
+                          </a>
+                         </div>
+                        </nav>
+                        <div class="tab-content my-3 p-0" style="flex: 100%;">
+                         <div class="tab-pane fade show active" id="foreigncurrencyconvertibleiptab" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-foreign-currency-ip-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpForeignCurrencyIpTable">
+                           </div>
+                          </div>
+                         </div>
+                         <div class="tab-pane fade" id="foreigncurrencyconvertiblels" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-foreign-currency-ls-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpForeignCurrencyLsTable">
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="preferentialissueip" role="tabpanel">
+                       <div class="common-tabs">
+                        <nav>
+                         <div class="nav nav-tabs" role="tablist">
+                          <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#preferentialissueiptab" id="equity-preferentialissueiptab" role="tab">
+                           In-Principle
+                          </a>
+                          <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#preferentialissuels" id="equity-preferentialissuels" role="tab">
+                           Listing Stage
+                          </a>
+                         </div>
+                        </nav>
+                        <div class="tab-content my-3 p-0" style="flex: 100%;">
+                         <div class="tab-pane fade show active" id="preferentialissueiptab" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-preferential-issue-ip-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpPreferentialIssueIpTable">
+                           </div>
+                          </div>
+                         </div>
+                         <div class="tab-pane fade" id="preferentialissuels" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-preferential-issue-ls-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpPreferentialIssueLsTable">
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="rightissueip" role="tabpanel">
+                       <div class="common-tabs">
+                        <nav>
+                         <div class="nav nav-tabs" role="tablist">
+                          <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#rightissueiptab" id="rightissueip_inner" role="tab">
+                           In-Principle
+                          </a>
+                          <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#rightissuels" id="rightissuels_inner" role="tab">
+                           Listing Stage
+                          </a>
+                         </div>
+                        </nav>
+                        <div class="tab-content my-3 p-0" style="flex: 100%;">
+                         <div class="tab-pane fade show active" id="rightissueiptab" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-right-issues-ip-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpRightIssueIpTable">
+                           </div>
+                          </div>
+                         </div>
+                         <div class="tab-pane fade" id="rightissuels" role="tabpanel">
+                          <div class="link-wrap text-end my-2">
+                           <a href="" id="corp-right-issues-ls-link">
+                            View All
+                            <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                           </a>
+                          </div>
+                          <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                           <div class="customTable-widthCorp wordBreak" id="corpRightIssueLsTable">
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="SDD_SAST" role="tabpanel">
+                    <div class="common-tabs">
+                     <nav>
+                      <div class="nav nav-tabs" role="tablist">
+                       <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#sdd_sast_reg7" id="equity-sddsastreg7" role="tab">
+                        Regulation 7 (Promoter)
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#sdd_sast_reg7npr" id="equity-sddsastreg7npr" role="tab">
+                        Regulation 7 (Non Promoters)
+                       </a>
+                       <a aria-selected="true" class="nav-item nav-link" data-bs-toggle="tab" href="#sdd_sast_reg29" id="equity-sddsastreg29" role="tab">
+                        Regulation 29 (Promoter)
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#sdd_sast_reg29npr" id="equity-sddsastreg29npr" role="tab">
+                        Regulation 29 (Non Promoters)
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#sdd_sast_reg30" id="equity-sddsastreg30" role="tab">
+                        Regulation 30 (Annual)
+                       </a>
+                       <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#sdd_sast_reg31" id="equity-sddsastreg31" role="tab">
+                        Regulation 31 (Event Based)
+                       </a>
+                      </div>
+                     </nav>
+                     <div class="tab-content my-3 p-0" style="flex: 100%;">
+                      <div class="tab-pane fade show active" id="sdd_sast_reg7" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-sdd-sast-reg7-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpSDDSastReg7Table">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="sdd_sast_reg7npr" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-sdd-sast-reg7-npr-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpSDDSastReg7NprTable">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="sdd_sast_reg29" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-sdd-sast-reg29-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpSDDSastReg29Table">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="sdd_sast_reg29npr" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-sdd-sast-reg29-npr-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpSDDSastReg29NprTable">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="sdd_sast_reg30" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-sdd-sast-reg30-link">
+                         View All
+                         <img alt="View All" height="10" idth="14" src="/assets/images/Read_more_CTA.svg" title="View All"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpSDDSastReg30Table">
+                        </div>
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="sdd_sast_reg31" role="tabpanel">
+                       <div class="link-wrap text-end my-2">
+                        <a href="" id="corp-sdd-sast-reg31-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                       <div class="table-wrap my-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                        <div class="customTable-widthCorp wordBreak" id="corpSDDSastReg31Table">
+                         <table class="common_table customHeight-table tableScroll alt_row w-100 tableWidth-2500" id="table-CFsastreg31event">
+                          <thead>
+                           <tr class="withborder">
+                            <th width="5.88%">
+                            </th>
+                            <th width="5.88%">
+                            </th>
+                            <th class="text-center" colspan="2" id="eqtargetCompany" width="11.76%">
+                             Promoter holding in the target company
+                            </th>
+                            <th class="text-center" colspan="2" id="eqalreadyEncumb" width="11.76%">
+                             Promoter  holding  already encumbered
+                            </th>
+                            <th class="text-center" colspan="7" id="eqdetailsEncumb" width="41.17%">
+                             Details of events pertaining to encumbrance
+                            </th>
+                            <th class="text-center" colspan="2" id="eqpostEncumShares" width="11.76%">
+                             Post event holding of  encumbered shares
+                            </th>
+                            <th width="5.88%">
+                            </th>
+                            <th width="5.88%">
+                            </th>
+                           </tr>
+                           <tr class="withborder">
+                            <th aria-sort="none" id="eqcompanyName" role="columnheader" width="5.88%">
+                             <a href="javascript:;" id="compny31SortId">
+                              Company Name
+                             </a>
+                            </th>
+                            <th id="eqpromoterNames" width="5.88%">
+                             Name(s) of promoter and/or persons in promoter group
+                            </th>
+                            <th id="eqtaretCompanyNumberShares" width="5.88%">
+                             Number of shares
+                            </th>
+                            <th id="eqtargetCompanyTotalEquityShare" width="5.88%">
+                             % of total equity share capital
+                            </th>
+                            <th id="eqalreadyEncumbNumberShares" width="5.88%">
+                             Number of shares
+                            </th>
+                            <th id="eqalreadyEncumbTotalEquityShare" width="5.88%">
+                             % of total equity share capital
+                            </th>
+                            <th id="eqtypeEvent" width="5.88%">
+                             Type of event (creation / release / invocation)
+                            </th>
+                            <th id="eqdateCreation" width="5.88%">
+                             Date of creation/ release/ invocation of encumbrance
+                            </th>
+                            <th id="eqdetailsNumberShare" width="5.88%">
+                             Number of shares
+                            </th>
+                            <th id="eqdetailsTotalEquityShare" width="5.88%">
+                             % of total equity share capital
+                            </th>
+                            <th width="5.88%">
+                             Reason for Encumbrance
+                            </th>
+                            <th width="5.88%">
+                             Name of the entity in whose favor shares encumbered
+                            </th>
+                            <th width="5.88%">
+                             Name of ultimate lender/ Debenture Issuer
+                            </th>
+                            <th id="eqdetailsNumberShares" width="5.88%">
+                             Number of shares
+                            </th>
+                            <th id="eqpostTotalEuityShare" width="5.88%">
+                             % of total equity share capital
+                            </th>
+                            <th id="eqpostDateTime" width="5.88%">
+                             Broadcaste date and time
+                            </th>
+                            <th id="eqregulation" width="5.88%">
+                             Regulation
+                            </th>
+                           </tr>
+                          </thead>
+                         </table>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Voting_Results" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span>
+                        Voting Results
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel ms-3">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-votingrs-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpVotingTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="info-corporateInfo" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2 id="info-corporateInfo-tab">
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       Corporate Information
+                      </h2>
+                     </div>
+                    </div>
+                    <div class="row align-items-center mb-2" id="corpInfo1">
+                     <div class="container">
+                      <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                       <table class="common_table alt_row w-100">
+                        <thead>
+                         <tr class="withborder">
+                          <th colspan="2" id="bodCorpInfoRec20" style="background-color: #C35516;">
+                           Security Details
+                          </th>
+                         </tr>
+                        </thead>
+                        <tr>
+                         <td style="width: 50%;">
+                          <b id="bodCorpInfoRecIsin">
+                           ISIN
+                          </b>
+                         </td>
+                         <td style="width: 50%;">
+                          <span id="isinCorp">
+                          </span>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td style="width: 50%;">
+                          <b id="bodCorpInfoRecCin">
+                           CIN
+                          </b>
+                         </td>
+                         <td style="width: 50%;">
+                          <span id="cinCorp">
+                          </span>
+                         </td>
+                        </tr>
+                        <tr hidden="">
+                         <td style="width: 50%;">
+                          <b>
+                           Industry
+                          </b>
+                         </td>
+                         <td style="width: 50%;">
+                          <span id="industryCorp">
+                          </span>
+                         </td>
+                        </tr>
+                        <tr hidden="">
+                         <td style="width: 50%;">
+                          <b>
+                           Impact Cost
+                          </b>
+                         </td>
+                         <td style="width: 50%;">
+                          <span id="impactCostCorp">
+                          </span>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td style="width: 50%;">
+                          <b id="bodCorpInfoRecBcBr">
+                           BC/RD
+                          </b>
+                         </td>
+                         <td style="width: 50%;">
+                          <span id="startDateCorp">
+                          </span>
+                         </td>
+                        </tr>
+                        <tr hidden="">
+                         <td style="width: 50%;">
+                          <b>
+                           Market lot
+                          </b>
+                         </td>
+                         <td style="width: 50%;">
+                          <span id="marketLotCorp">
+                          </span>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td style="width: 50%;">
+                          <b id="bodCorpInfoRecListDate">
+                           Listing Date
+                          </b>
+                         </td>
+                         <td style="width: 50%;">
+                          <span id="listingDateCorp">
+                          </span>
+                         </td>
+                        </tr>
+                       </table>
+                      </div>
+                      <br/>
+                      <div class="table-wrap mt-3 borderSet maxHeight-900 scrollWrap">
+                       <div class="customTable-widthCorp breakWord tableScroll deque-table-sortable-group">
+                        <table class="common_table tableScroll alt_row w-100" id="table-corpInfoRec20Table">
+                         <thead>
+                          <tr class="withborder">
+                           <th colspan="2" id="bodCorpInfoRec20" style="background-color: #C35516;">
+                            Board of Directors
+                           </th>
+                          </tr>
+                          <tr class="withborder">
+                           <th id="name" style="width: 50%;">
+                            Name
+                           </th>
+                           <th id="designation" style="width: 50%;">
+                            Designation
+                           </th>
+                          </tr>
+                         </thead>
+                        </table>
+                       </div>
+                      </div>
+                      <br/>
+                      <div class="table-wrap mt-3 borderSet maxHeight-900 scrollWrap">
+                       <div class="customTable-widthCorp breakWord tableScroll deque-table-sortable-group">
+                        <table class="common_table tableScroll alt_row w-100" id="table-corpInfoRec30Table">
+                         <thead>
+                          <tr class="withborder">
+                           <th colspan="2" id="bodCorpInfoRec30" style="background-color: #C35516;">
+                            Secretarial Auditor details
+                           </th>
+                          </tr>
+                          <tr class="withborder">
+                           <th id="certifyingFirmName" style="width: 50%;">
+                            NAME OF SECRETARIAL AUDIT FIRM / AUDITOR
+                           </th>
+                          </tr>
+                         </thead>
+                        </table>
+                       </div>
+                      </div>
+                      <br/>
+                      <div class="table-wrap mt-3 borderSet maxHeight-900 scrollWrap">
+                       <div class="customTable-widthCorp breakWord tableScroll deque-table-sortable-group">
+                        <table class="common_table tableScroll alt_row w-100" id="table-corpInfoStatTable">
+                         <thead>
+                          <tr class="withborder">
+                           <th colspan="6" id="bodCorpInfoStat" style="background-color: #C35516;">
+                            Statutory Auditor Details
+                           </th>
+                          </tr>
+                          <tr>
+                           <td colspan="2" id="StatData">
+                            -
+                           </td>
+                          </tr>
+                         </thead>
+                        </table>
+                       </div>
+                      </div>
+                      <br/>
+                      <div class="table-wrap mt-3 borderSet maxHeight-900 scrollWrap">
+                       <div class="customTable-width tableWidth-1100 deque-table-sortable-group">
+                        <table class="common_table tableScroll alt_row w-100" id="table-corpInfoRec40Table">
+                         <thead>
+                          <tr class="withborder">
+                           <th colspan="6" id="bodCorpInfoRec40" style="background-color: #C35516;">
+                            Contact Details
+                           </th>
+                          </tr>
+                          <tr class="withborder">
+                           <th id="addressType" style="width: 5%;">
+                            Particulars
+                           </th>
+                           <th id="address1" style="width: 20%;">
+                            Address
+                           </th>
+                           <th id="phoneNo" style="width: 10%;">
+                            Phone No.
+                           </th>
+                           <th id="faxNo" style="width: 10%;">
+                            Fax
+                           </th>
+                           <th id="emailId" style="width: 10%;">
+                            Email ID
+                           </th>
+                           <th id="website" style="width: 10%;">
+                            Website
+                           </th>
+                          </tr>
+                         </thead>
+                        </table>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div id="corpInfo2">
+                     <h2 class="my-3" style="color: crimson;">
+                      No Data Found
+                     </h2>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Annual_Reports" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="home-annulaReport-tab">
+                        Annual Reports
+                       </span>
+                      </h2>
+                      <div class="link-wrap text-end my-2">
+                       <a href="" id="corp-annualrs-link">
+                        View All
+                        <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                       </a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpAnnualReportTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Daily_Buyback" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel mb-0">
+                      <h2 id="Daily_Buyback_tab">
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       Daily Buy Back
+                      </h2>
+                      <div class="link-wrap text-end my-2">
+                       <a href="" id="corp-dbb-link">
+                        View All
+                        <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                       </a>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap mt-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpDailyBuyTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Investor_Complaints" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2 id="investor_complaints_tab">
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       Investor Complaints
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center ms-3">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-invstcom-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="investorComplaintsTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Company_Directory" role="navigation">
+                    <ul class="nav nav-tabs withborder">
+                     <li class="nav-item">
+                      <a aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#comp_directory_detail" id="comp_directory_detail_tab">
+                       Company Directory
+                      </a>
+                     </li>
+                     <li class="nav-item">
+                      <a aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#agent_details" id="agent_details_tab">
+                       Transfer Agent Details
+                      </a>
+                     </li>
+                    </ul>
+                    <div class="tab-content ps-0 my-3">
+                     <div class="tab-pane fade active show" id="comp_directory_detail" role="tabpanel">
+                      <div class="row align-items-center mb-2">
+                       <div class="col-md-6" id="companyDirectoryFilterPanel">
+                       </div>
+                       <div class="col-md-6 text-end">
+                        <div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="link-wrap text-end my-2">
+                       <a href="" id="corp-directory-link">
+                        View All
+                        <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                       </a>
+                      </div>
+                      <div class="table-wrap mt-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                       <div class="customTable-widthCorp wordBreak" id="companyDirectoryTable">
+                       </div>
+                      </div>
+                     </div>
+                     <div class="tab-pane fade" id="agent_details" role="tabpanel">
+                      <div class="link-wrap text-end my-2">
+                       <a href="" id="corp-tad-link">
+                        View All
+                        <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                       </a>
+                      </div>
+                      <div class="table-wrap mt-3 borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                       <div class="customTable-widthCorp wordBreak" id="transferAgentDetailsTable">
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="promoter_pledge" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2 id="promoter_encumbrance_details_tab">
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       Promoter Encumbrance Details
+                      </h2>
+                     </div>
+                    </div>
+                    <div class="table-wrap">
+                     <table class="common_table alt_row alt_row table-bordered" id="table-plegdedetails">
+                      <thead>
+                       <tr>
+                        <th class="text-center" colspan="3" width="100">
+                         <span id="disclosuredate">
+                         </span>
+                        </th>
+                       </tr>
+                       <tr>
+                        <th class="text-end" id="per1" width="33%">
+                         % of shareholding of promoter and promoter group to total shareholding
+                        </th>
+                        <th class="text-end" id="per2" width="33%">
+                         % of shares pledged or otherwise encumbered by promoter and promoter group to total shareholding
+                        </th>
+                        <th class="text-end" id="per3" width="33%">
+                         % of shares pledged or otherwise encumbered by promoter and promoter group to total shareholding of promoter and promoter group
+                        </th>
+                       </tr>
+                      </thead>
+                     </table>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="EventCalender" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2 id="Event_Calender_tab">
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       Event Calendar
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-end ms-3">
+                        <a href="" id="corp-event-calender-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="corpEventCalenderTable">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Financial_Results_Comparision" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       Financial Results Comparision
+                      </h2>
+                     </div>
+                    </div>
+                    <div class="table-wrap my-3 borderSet maxHeight-900 scrollWrap" tabindex="0">
+                     <div class="customTable-widthCorp" id="resultsCompare">
+                     </div>
+                    </div>
+                   </div>
+                   <div class="tab-pane fade" id="Stmt_Of_Impact" role="tabpanel">
+                    <div class="row">
+                     <div class="col-md-12 header_xbrl_excel">
+                      <h2>
+                       <img alt="view all" class="backtohomeicon back_btn" src="/assets/images/Read_more_CTA.svg" title="Back"/>
+                       <span id="Stmt_On_Impact_Audit_tab">
+                        Statement on Impact of Audit qualification
+                       </span>
+                      </h2>
+                      <div class="xlsDownload-wrp align-items-center">
+                       <div class="xbrl-excel ml-3">
+                        <a href="http://ec2-3-221-41-38.compute-1.amazonaws.com/" target="_blank" title="Convert XBRL into Excel">
+                         <img alt="xbrl" src="/assets/images/xbrl-excel.svg"/>
+                         Convert XBRL into Excel
+                        </a>
+                       </div>
+                       <div class="link-wrap text-right ml-3">
+                        <a href="" id="corp-stmtonimpact-link">
+                         View All
+                         <img alt="View All" height="10" src="/assets/images/Read_more_CTA.svg" title="View All" width="14"/>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="table-wrap borderSet maxHeight-400 maxHeight-900 scrollWrap">
+                     <div class="customTable-widthCorp wordBreak" id="stmtOnImpactTable">
+                     </div>
+                    </div>
+                    <div class="note_container mt-3">
+                     <h3>
+                      <span id="Market-Note">
+                       Note
+                      </span>
+                     </h3>
+                     <ul>
+                      <li>
+                       All Values are in ₹ Lakhs.
+                      </li>
+                     </ul>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="tab-pane fade" id="info-historicaldata" role="tabpanel">
+              <nav class="subtabs subtabs-spacing">
+               <div class="container">
+                <div class="nav nav-tabs" role="tablist">
+                 <a aria-selected="true" class="nav-item nav-link active" data-bs-toggle="tab" href="#historical-trade" role="tab">
+                  <h4 id="tradeData">
+                   TRADE DATA
+                  </h4>
+                 </a>
+                 <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#historical-bulk" id="bbdd" role="tab">
+                  <h4 id="bulkBlockDealsData">
+                   Bulk/Block Deals Data
+                  </h4>
+                 </a>
+                 <a aria-selected="false" class="nav-item nav-link" data-bs-toggle="tab" href="#historical-periodic" id="phld" role="tab">
+                  <h4 id="periodicHighLowData">
+                   Periodic High Low Data
+                  </h4>
+                 </a>
+                </div>
+               </div>
+              </nav>
+              <div class="tab-content historical-content py-3 pb-0">
+               <div class="tab-pane fade show active" id="historical-trade" role="tabpanel">
+                <section class="block-deals-container">
+                 <div class="container">
+                  <div class="block-detail-dates-box">
+                   <div class="row">
+                    <div class="col-md-5">
+                     <ul class="dayslisting">
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="1D" href="#" id="oneD">
+                        1D
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="1W" href="#" id="oneW">
+                        1W
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="1M" href="#" id="oneM">
+                        1M
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="3M" href="#" id="threeM">
+                        3M
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="6M" href="#" id="sixM">
+                        6M
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="1Y" href="#" id="oneY">
+                        1Y
+                       </a>
+                      </li>
+                     </ul>
+                    </div>
+                    <div class="col-md-7">
+                     <div class="row date-format-relate" id="equity-historical-Date-filter">
+                      <div class="col-md-5 text-end">
+                       <div class="labeldate" id="startDate1Lbl">
+                        From
+                       </div>
+                       <input aria-labelledby="startDate1Lbl" class="startDate-block-deals dtpicker" id="startDate1" readonly="" value="">
+                       </input>
+                      </div>
+                      <div class="col-md-5 text-end">
+                       <div class="labeldate" id="endDate1Lbl">
+                        To
+                       </div>
+                       <input aria-labelledby="endDate1Lbl" class="endDate-block-deals dtpicker" id="endDate1" readonly="" value="">
+                       </input>
+                      </div>
+                      <div class="clear-btn-parent pe-2">
+                       <button class="btn flat-button-white btn-min-w" id="tradeDataFilter">
+                        Filter
+                       </button>
+                      </div>
+                     </div>
+                     <p class="text-end redTxt" hide="" id="equity-historical-validationError">
+                     </p>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="histo-data-block">
+                   <div class="row">
+                    <div class="col-md-6">
+                     <h2>
+                      <span id="quoteNav">
+                       <span id="equity-historical-symbol">
+                       </span>
+                      </span>
+                      <span>
+                       <span id="Period">
+                        (Period
+                       </span>
+                       <span id="equity-historical-fromDate">
+                       </span>
+                       to
+                       <span id="equity-historical-toDate">
+                       </span>
+                       )
+                      </span>
+                     </h2>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="row align-items-center filter_row">
+                      <div class="col-md-6 col-6">
+                       <div class="d-flex align-items-center">
+                        <div class="typebox me-2" id="equity-historical-series-ListLbl">
+                         Series
+                        </div>
+                        <div aria-labelledby="equity-historical-series-ListLbl" class="custom_select_bs greybrdr">
+                         <select class="custom-select multi-select" id="equity-historical-series-List" multiple="multiple">
+                         </select>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="col-md-6 col-6 text-end">
+                       <div class="xlsdownload">
+                        <a href="#" id="tradeDataDownload">
+                         <img alt="csv" src="/assets/images/icon-xls.svg" title="csv">
+                          <span id="dwldcsv">
+                           Download (.csv)
+                          </span>
+                         </img>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="table-wrap borderSet maxHeight-480 scrollWrap">
+                   <div class="historical-data-table-wrap mb-3 customTable-width" id="tableEquityHistoricalData">
+                   </div>
+                  </div>
+                 </div>
+                </section>
+               </div>
+               <div class="tab-pane fade" id="historical-bulk" role="tabpanel">
+                <section class="block-deals-container">
+                 <div class="container">
+                  <div class="block-detail-dates-box">
+                   <div class="row">
+                    <div class="col-md-5">
+                     <ul class="dayslisting">
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="1D" href="#" id="oneD">
+                        1D
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="1W" href="#" id="oneW">
+                        1W
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="1M" href="#" id="oneM">
+                        1M
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="3M" href="#" id="threeM">
+                        3M
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="6M" href="#" id="sixM">
+                        6M
+                       </a>
+                      </li>
+                      <li>
+                       <a aria-current="false" class="cursor-pointer-no-redirect" data-val="1Y" href="#" id="oneY">
+                        1Y
+                       </a>
+                      </li>
+                     </ul>
+                    </div>
+                    <div class="col-md-7 row date-format-relate" id="equity-historical-bb-Date-filter">
+                     <div class="col-md-5 text-end">
+                      <div class="labeldate" id="startDate2Lbl">
+                       From
+                      </div>
+                      <input aria-labelledby="startDate2Lbl" class="startDate-block-deals dtpicker" id="startDate2" readonly="" value="">
+                      </input>
+                     </div>
+                     <div class="col-md-5 text-end">
+                      <div class="labeldate" id="endDate2Lbl">
+                       To
+                      </div>
+                      <input aria-labelledby="endDate2Lbl" class="endDate-block-deals dtpicker" id="endDate2" readonly="" value="">
+                      </input>
+                     </div>
+                     <div class="clear-btn-parent pe-2">
+                      <button class="btn flat-button-white btn-min-w" id="historicalBulkFilter">
+                       <span id="filter">
+                        Filter
+                       </span>
+                      </button>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="histo-data-block">
+                   <div class="row">
+                    <div class="col-md-6">
+                     <h2>
+                      <span id="equity-historical-bb-symbol">
+                      </span>
+                      <span>
+                       (
+                       <span id="Period">
+                        Period
+                       </span>
+                       <span id="equity-historical-bb-fromDate">
+                       </span>
+                       <span id="to">
+                        to
+                       </span>
+                       <span id="equity-historical-bb-toDate">
+                       </span>
+                       )
+                      </span>
+                     </h2>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="row align-items-center filter_row">
+                      <div class="col-md-6 col-6">
+                      </div>
+                      <div class="col-md-6 col-6 text-end">
+                       <div class="xlsdownload">
+                        <a href="#" id="historicalBulkDownload">
+                         <img alt="csv" src="/assets/images/icon-xls.svg" title="csv">
+                          Download (
+                          <spanid="dwldcsv">
+                           .csv
+                           )
+                          </spanid="dwldcsv">
+                         </img>
+                        </a>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="container">
+                  <div class="tbl_leftcol_fix">
+                   <div class="table-wrap borderSet maxHeight-480 scrollWrap">
+                    <div class="historical-data-table-wrap mb-3 customTable-width" id="tableEquityHistoricalBBData">
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+               </div>
+               <div class="tab-pane fade" id="historical-periodic" role="tabpanel">
+                <div class="container periodic_container">
+                 <div class="row data-row">
+                  <div class="col-md-4 data-col">
+                   <div class="card" id="card1">
+                    <div class="card-header">
+                     <h4 id="data_52_week">
+                      Data for 52 week period:
+                     </h4>
+                     <h4>
+                      <span id="card1-fromdt">
+                       -
+                      </span>
+                      to
+                      <span id="card1-todt">
+                       -
+                      </span>
+                     </h4>
+                    </div>
+                    <div class="card-body">
+                     <div class="table-wrap borderSet maxHeight-480 scrollWrap">
+                      <table class="card-table">
+                      </table>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="col-md-4 data-col">
+                   <div class="card" id="card2">
+                    <div class="card-header">
+                     <div class="row align-items-center">
+                      <div class="col-md-7">
+                       <h4 id="yearlyDataLbl">
+                        Yearly Data for period:
+                       </h4>
+                      </div>
+                      <div class="col-md-5 text-end">
+                       <div class="selectbox">
+                        <div aria-labelledby="yearlyDataLbl" class="m_custom_select">
+                         <select id="equity-historical-card2-year-select">
+                          <option value="">
+                           Year
+                          </option>
+                         </select>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="card-body">
+                     <div class="table-wrap borderSet maxHeight-480 scrollWrap">
+                      <table class="table-resonsive card-table">
+                      </table>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="col-md-4 data-col">
+                   <div class="card" id="card3">
+                    <div class="card-header">
+                     <div class="row align-items-center equity_alignment">
+                      <h4 id="monthlyData">
+                       Monthly Data for period :
+                      </h4>
+                      <div aria-labelledby="monthlyData" class="m_custom_select">
+                       <select id="equity-historical-card3-month-select">
+                        <option value="">
+                         Month
+                        </option>
+                        <option value="01">
+                         Jan
+                        </option>
+                        <option value="02">
+                         Feb
+                        </option>
+                        <option value="03">
+                         Mar
+                        </option>
+                        <option value="04">
+                         Apr
+                        </option>
+                        <option value="05">
+                         May
+                        </option>
+                        <option value="06">
+                         Jun
+                        </option>
+                        <option value="07">
+                         Jul
+                        </option>
+                        <option value="08">
+                         Aug
+                        </option>
+                        <option value="09">
+                         Sep
+                        </option>
+                        <option value="10">
+                         Oct
+                        </option>
+                        <option value="11">
+                         Nov
+                        </option>
+                        <option value="12">
+                         Dec
+                        </option>
+                       </select>
+                      </div>
+                      <div aria-labelledby="monthlyData" class="m_custom_select">
+                       <select id="equity-historical-card3-year-select">
+                        <option value="">
+                         Year
+                        </option>
+                       </select>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="card-body">
+                     <div class="table-wrap borderSet maxHeight-480 scrollWrap">
+                      <table class="table-resonsive card-table">
+                      </table>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                 <div class="row alltimehighlow mt-2">
+                  <div class="col-md-6">
+                   <div class="card">
+                    <div class="row card-body">
+                     <div class="bold col-4">
+                      <span id="all_time_high">
+                       All Time High
+                      </span>
+                     </div>
+                     <div class="highlownum bold col-4 text-center" id="periodic-52wkH-value">
+                      -
+                     </div>
+                     <div class="col-4 bold text-end" id="periodic-52wkH-date">
+                      -
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="col-md-6">
+                   <div class="card">
+                    <div class="row card-body">
+                     <div class="bold col-4">
+                      <span id="all_time_low">
+                       All Time Low
+                      </span>
+                     </div>
+                     <div class="highlownum bold col-4 text-center" id="periodic-52wkL-value">
+                      -
+                     </div>
+                     <div class="col-4 bold text-end" id="periodic-52wkL-date">
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="container">
+                <div class="note_container mt-2">
+                 <!-- <div id="getQuoteEquityTradeInforamtionNotes"></div> -->
+                 <h3>
+                  <span id="Market-Note">
+                   Note :
+                  </span>
+                 </h3>
+                 <p>
+                  To Read all the information, please
+                  <a class="click_title" data-bs-target="#modal_note_container" data-bs-toggle="modal">
+                   Click here
+                  </a>
+                 </p>
+                </div>
+                <!-- <div class="note_container">
+                        <div id="getQuoteEquityHistoricalDataNotes"></div>
+                    </div> -->
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+ </div>
+</div>

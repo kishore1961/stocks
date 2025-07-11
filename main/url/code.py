@@ -1,20 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
-import json
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
-import time
 
-def scrape_nse_beml_basic():
+def scrape_nse_beml_announcements():
     """
-    Basic scraping approach using requests and BeautifulSoup
+    Scrapes the NSE India BEML announcements table inside the div with id 'corpAnnouncementTable'
     """
-    url = "https://www.nseindia.com/get-quotes/equity?symbol=BEML"
+    url = "https://www.nseindia.com/get-quotes/equity?symbol=BEML#Announcements"
     
-    # Headers to mimic a real browser
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -22,58 +14,59 @@ def scrape_nse_beml_basic():
         'Accept-Encoding': 'gzip, deflate',
         'Connection': 'keep-alive',
         'Upgrade-Insecure-Requests': '1',
+        'Referer': 'https://www.nseindia.com/',
     }
-    
+
     try:
-        # Create a session to maintain cookies
         session = requests.Session()
         session.headers.update(headers)
-        
-        # First, get the main page to establish session
+
         response = session.get(url, timeout=10)
         response.raise_for_status()
-        
-        # Parse the HTML
+
         soup = BeautifulSoup(response.content, 'html.parser')
-        
-        # Look for div with class "setting wrap data"
-        target_div = soup.find('div', class_='main')
-        
-        if target_div:
-            print("Found div with class 'main':")
-            print("-" * 50)
-            print(target_div.prettify())
-            return target_div
-        else:
-            print("Div with class 'main' not found")
-            # Let's also check for similar classes
-            print("\nSearching for similar classes...")
-            divs_with_setting = soup.find_all('div', class_=lambda x: x and 'setting wrap' in x)
 
-            
-            print(f"Found {len(divs_with_setting)} divs with 'setting wrap' in class")
+        # ✅ Step 1: Find the outer div
+        main_div = soup.find('div', class_='main')
+        if not main_div:
+            raise Exception("Main div not found")
 
-            
-            return None
-            
-    except requests.RequestException as e:
-        print(f"Error fetching the page: {e}")
+        # ✅ Step 2: Go deeper into nested structure and find the announcement table div
+        announcement_div = main_div.find('div', id='corpAnnouncementTable')
+        if not announcement_div:
+            raise Exception("Announcement div with id='corpAnnouncementTable' not found")
+
+
+        print(announcement_div.prettify())  # For debugging, to see the structure
+        # ✅ Step 3: Find the table
+        table = announcement_div.find('table')
+        if not table:
+            raise Exception("Table not found inside the announcement div")
+
+        # ✅ Step 4: Extract rows from the table body
+        tbody = table.find('tbody')
+        rows = tbody.find_all('tr') if tbody else []
+
+        announcements = []
+        for row in rows:
+            columns = row.find_all('td')
+            row_data = [col.get_text(strip=True) for col in columns]
+            announcements.append(row_data)
+
+        # ✅ Output to file
+        with open("announcements.txt", "w", encoding="utf-8") as file:
+            for row in announcements:
+                file.write("\t".join(row) + "\n")
+
+        print(f"✅ Extracted {len(announcements)} announcement rows. Saved to announcements.txt")
+
+        return announcements
+
+    except Exception as e:
+        print(f"❌ Error: {e}")
         return None
 
 if __name__ == "__main__":
-    print("NSE India BEML Data Scraper")
+    print("NSE India BEML Announcements Scraper")
     print("=" * 50)
-    
-    print("\n1. Trying basic scraping approach...")
-    basic_result = scrape_nse_beml_basic()
-    
-    
-    print("\n3. Trying Selenium approach...")
-    print("Note: This requires ChromeDriver to be installed")
-    print("Install with: pip install selenium")
-    print("Download ChromeDriver from: https://chromedriver.chromium.org/")
-    
-    # Uncomment the line below if you have Selenium and ChromeDriver set up
-    # selenium_result = scrape_nse_beml_selenium()
-    
-    print("\nScraping complete!")
+    scrape_nse_beml_announcements()
