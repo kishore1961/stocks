@@ -1,0 +1,81 @@
+{
+  "scrip_code": "53240",
+  "fetch_time": "2025-07-26 13:22:46",
+  "quote_data": null,
+  "market_data": {
+    "top_gainers": [
+      {
+        "securityID": "SHARDACROP",
+        "scripCode": "538666",
+        "LTP": "1,088.35",
+        "change": "179.80",
+        "pChange": "19.79"
+      },
+      {
+        "securityID": "IEX",
+        "scripCode": "540750",
+        "LTP": "145.10",
+        "change": "12.65",
+        "pChange": "9.55"
+      },
+      {
+        "securityID": "SOLARA",
+        "scripCode": "541540",
+        "LTP": "695.80",
+        "change": "38.45",
+        "pChange": "5.85"
+      },
+      {
+        "securityID": "PHOENIXLTD",
+        "scripCode": "503100",
+        "LTP": "1,526.95",
+        "change": "78.65",
+        "pChange": "5.43"
+      },
+      {
+        "securityID": "HOMEFIRST",
+        "scripCode": "543259",
+        "LTP": "1,473.05",
+        "change": "58.50",
+        "pChange": "4.14"
+      }
+    ],
+    "top_losers": [
+      {
+        "securityID": "CHENNPETRO",
+        "scripCode": "500110",
+        "LTP": "687.35",
+        "change": "-73.65",
+        "pChange": "-9.68"
+      },
+      {
+        "securityID": "INTELLECT",
+        "scripCode": "538835",
+        "LTP": "1,034.70",
+        "change": "-107.05",
+        "pChange": "-9.38"
+      },
+      {
+        "securityID": "APLAPOLLO",
+        "scripCode": "533758",
+        "LTP": "1,541.30",
+        "change": "-147.05",
+        "pChange": "-8.71"
+      },
+      {
+        "securityID": "PAISALO",
+        "scripCode": "532900",
+        "LTP": "32.55",
+        "change": "-2.87",
+        "pChange": "-8.10"
+      },
+      {
+        "securityID": "AVANTEL",
+        "scripCode": "532406",
+        "LTP": "135.95",
+        "change": "-11.20",
+        "pChange": "-7.61"
+      }
+    ]
+  }
+}

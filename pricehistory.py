@@ -25,6 +25,7 @@ def get_stock_price_history(ticker, plot=True):
     print(stock_info)
     
     # Plot if requested
+    
     if plot and not hist.empty:
         plt.figure(figsize=(12, 8))
         

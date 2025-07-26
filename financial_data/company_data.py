@@ -124,8 +124,7 @@ class BSEDataExtractor:
             print(f"✓ Data saved to: {json_filename}")
         except Exception as e:
             print(f"✗ Error saving JSON: {e}")
-
-    
+ 
     def batch_quotes(self, scrip_codes):
         """Get quotes for multiple companies"""
         results = {}
@@ -183,8 +182,6 @@ print(f"\n✅ Data extraction completed!")
 # print("  - Annual reports")
 # print("  - Corporate actions")
     
-
-
 # Example: Get data for multiple companies
 def example_batch_processing():
     """Example of batch processing multiple companies"""
@@ -213,8 +210,6 @@ def example_batch_processing():
             print(f"{scrip_code:8} | {name:20} | ₹{price:>8} | {change:>6}%")
     
     return results
-
-
     
 # Uncomment to run batch example
 # print("\n" + "="*60)
