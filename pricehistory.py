@@ -20,7 +20,9 @@ def get_stock_price_history(ticker, plot=True):
     
     # Get stock data
     stock = yf.Ticker(ticker)
-    hist = stock.history(period='max')
+    hist = stock.history(period='max')    
+    stock_info = stock.balance_sheet
+    print(stock_info)
     
     # Plot if requested
     if plot and not hist.empty:

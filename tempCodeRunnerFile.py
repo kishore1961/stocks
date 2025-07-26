@@ -1,1 +1,0 @@
-get_nifty_sensex_data
